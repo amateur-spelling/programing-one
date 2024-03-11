@@ -1,0 +1,3 @@
+C:\Users\lavelle.c\Documents\programing one\prog58b\prog58b\obj\Debug\prog58b.pyprojResolveAssemblyReference.cache
+C:\Users\lavelle.c\Documents\programing one\prog58b\prog58b\obj\Debug\prog58b.MainForm.resources
+C:\Users\lavelle.c\Documents\programing one\prog58b\prog58b\obj\Debug\prog58b.pyproj.GenerateResource.Cache

@@ -1,0 +1,12 @@
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Phone number\Phone number\bin\Debug\Phone number.exe.config
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Phone number\Phone number\bin\Debug\Phone number.exe
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Phone number\Phone number\bin\Debug\Phone number.dll
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Phone number\Phone number\bin\Debug\IronPython.dll
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Phone number\Phone number\bin\Debug\IronPython.Modules.dll
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Phone number\Phone number\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Phone number\Phone number\bin\Debug\Microsoft.Scripting.dll
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Phone number\Phone number\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Phone number\Phone number\obj\Debug\Phone number.pyprojResolveAssemblyReference.cache
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Phone number\Phone number\obj\Debug\Phone_number.MainForm.resources
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Phone number\Phone number\obj\Debug\Phone number.pyproj.GenerateResource.Cache
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Phone number\Phone number\obj\Debug\Phone number.exe

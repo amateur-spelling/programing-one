@@ -1,0 +1,24 @@
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Craig Rules\Craig Rules\bin\Debug\Craig Rules.exe.config
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Craig Rules\Craig Rules\bin\Debug\Craig Rules.exe
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Craig Rules\Craig Rules\bin\Debug\Craig Rules.dll
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Craig Rules\Craig Rules\bin\Debug\IronPython.dll
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Craig Rules\Craig Rules\bin\Debug\IronPython.Modules.dll
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Craig Rules\Craig Rules\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Craig Rules\Craig Rules\bin\Debug\Microsoft.Scripting.dll
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Craig Rules\Craig Rules\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Craig Rules\Craig Rules\obj\Debug\Craig Rules.pyprojResolveAssemblyReference.cache
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Craig Rules\Craig Rules\obj\Debug\Craig_Rules.MainForm.resources
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Craig Rules\Craig Rules\obj\Debug\Craig Rules.pyproj.GenerateResource.Cache
+C:\Users\lavelle.c\Documents\SharpDevelop Projects\Craig Rules\Craig Rules\obj\Debug\Craig Rules.exe
+C:\Users\lavelle.c\Documents\programing one\Craig Rules\Craig Rules\bin\Debug\Craig Rules.exe.config
+C:\Users\lavelle.c\Documents\programing one\Craig Rules\Craig Rules\bin\Debug\Craig Rules.exe
+C:\Users\lavelle.c\Documents\programing one\Craig Rules\Craig Rules\bin\Debug\Craig Rules.dll
+C:\Users\lavelle.c\Documents\programing one\Craig Rules\Craig Rules\bin\Debug\IronPython.dll
+C:\Users\lavelle.c\Documents\programing one\Craig Rules\Craig Rules\bin\Debug\IronPython.Modules.dll
+C:\Users\lavelle.c\Documents\programing one\Craig Rules\Craig Rules\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\lavelle.c\Documents\programing one\Craig Rules\Craig Rules\bin\Debug\Microsoft.Scripting.dll
+C:\Users\lavelle.c\Documents\programing one\Craig Rules\Craig Rules\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\lavelle.c\Documents\programing one\Craig Rules\Craig Rules\obj\Debug\Craig Rules.pyprojResolveAssemblyReference.cache
+C:\Users\lavelle.c\Documents\programing one\Craig Rules\Craig Rules\obj\Debug\Craig_Rules.MainForm.resources
+C:\Users\lavelle.c\Documents\programing one\Craig Rules\Craig Rules\obj\Debug\Craig Rules.pyproj.GenerateResource.Cache
+C:\Users\lavelle.c\Documents\programing one\Craig Rules\Craig Rules\obj\Debug\Craig Rules.exe
