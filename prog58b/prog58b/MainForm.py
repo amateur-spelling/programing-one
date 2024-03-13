@@ -1,5 +1,6 @@
 ﻿import System.Drawing
 import System.Windows.Forms
+import math
 
 from System.Drawing import *
 from System.Windows.Forms import *
@@ -106,6 +107,7 @@ class MainForm(Form):
 		self._button3.TabIndex = 8
 		self._button3.Text = "Exit"
 		self._button3.UseVisualStyleBackColor = False
+		self._button3.Click += self.Button3Click
 		# 
 		# label4
 		# 
@@ -151,17 +153,21 @@ class MainForm(Form):
 
 
 	def Button2Click(self, sender, e):
-		self._label4.Text = ""
-		self._TextBox1.Text = ""
-		self._TextBox2.Text = ""
-		self._TextBox3.Text = ""
+		self._label4.Text = "Root"
+		self._label5.Text = "Root"
+		self._textBox1.Text = ""
+		self._textBox2.Text = ""
+		self._textBox3.Text = ""
 
 	def Button1Click(self, sender, e):
-		A = self._textBox1.Text
-		B = self._textBox2.Text
-		C = self._textBox3.Text
-		Root1 = int(-B + math.sqrt(B**2 - (4 * A * C)) / (2 * A)
-		Root2 = (-B - math.sqrt(B**2 - (4 * A * C)) / (2 * A)
+		A = int(self._textBox1.Text)
+		B = int(self._textBox2.Text)
+		C = int(self._textBox3.Text)
+		Root1 = -B + math.sqrt(B**2 - (4 * A * C)) / (2 * A)
+		Root2 = -B - math.sqrt(B**2 - (4 * A * C)) / (2 * A)
 		
 		self._label4.Text = str(Root1)
 		self._label5.Text = str(Root2)
+
+	def Button3Click(self, sender, e):
+		Application.Exit()
