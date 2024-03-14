@@ -163,8 +163,8 @@ class MainForm(Form):
 		A = int(self._textBox1.Text)
 		B = int(self._textBox2.Text)
 		C = int(self._textBox3.Text)
-		Root1 = -B + math.sqrt(B**2 - (4 * A * C)) / (2 * A)
-		Root2 = -B - math.sqrt(B**2 - (4 * A * C)) / (2 * A)
+		Root1 = (-B + math.sqrt(B**2 - (4 * A * C))) / (2 * A)
+		Root2 = (-B - math.sqrt(B**2 - (4 * A * C))) / (2 * A)
 		
 		self._label4.Text = str(Root1)
 		self._label5.Text = str(Root2)
