@@ -102,8 +102,8 @@ class MainForm(Form):
 	def Button3Click(self, sender, e):
 		Rad = float(self._textBox1.Text)
 		Pi = float(3.14159)
-		Area = round((Pi * Rad**2 * 1.000), 3)
-		Cir = round((Pi * (Rad * 2) * 1.000), 3)
+		Area = round((Pi * Rad**2), 3)
+		Cir = round((Pi * (Rad * 2)), 3)
 		
 		self._label1.Text = str(Area)
 		self._label2.Text = str(Cir)
