@@ -124,15 +124,15 @@ class MainForm(Form):
 		self.label1.Text = ""
 
 	def Button2Click(self, sender, e):
-		pass
+		Application.Exit()
 
 	def Button1Click(self, sender, e):
-		lim = int(self._textbox3.Text)
-		speed = int(self._textbox1.Text)
+		lim = int(self._textBox3.Text)
+		speed = int(self._textBox1.Text)
 		points = float(speed - lim) 
-		cost = float(20.00 + (points * 5.00))
+		cost = float(round(20.00 + (points * 5.00)))
 		
 		if points <= 0:
-			self._label1 = "No ticket"
+			self._label1.Text = "No ticket"
 		else:
-			self._label1 = str(cost)
+			self._label1.Text = str(cost)
