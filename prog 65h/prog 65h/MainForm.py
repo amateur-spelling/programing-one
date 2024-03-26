@@ -25,8 +25,9 @@ class MainForm(Form):
 		self._button1.Name = "button1"
 		self._button1.Size = System.Drawing.Size(117, 76)
 		self._button1.TabIndex = 0
-		self._button1.Text = "button1"
+		self._button1.Text = "Exit"
 		self._button1.UseVisualStyleBackColor = False
+		self._button1.Click += self.Button1Click
 		# 
 		# button2
 		# 
@@ -35,8 +36,9 @@ class MainForm(Form):
 		self._button2.Name = "button2"
 		self._button2.Size = System.Drawing.Size(111, 76)
 		self._button2.TabIndex = 1
-		self._button2.Text = "button2"
+		self._button2.Text = "Clear"
 		self._button2.UseVisualStyleBackColor = False
+		self._button2.Click += self.Button2Click
 		# 
 		# button3
 		# 
@@ -66,6 +68,7 @@ class MainForm(Form):
 		self._textBox1.Name = "textBox1"
 		self._textBox1.Size = System.Drawing.Size(100, 20)
 		self._textBox1.TabIndex = 4
+		self._textBox1.Text = "Pound"
 		self._textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 		# 
 		# textBox2
@@ -74,6 +77,7 @@ class MainForm(Form):
 		self._textBox2.Name = "textBox2"
 		self._textBox2.Size = System.Drawing.Size(100, 20)
 		self._textBox2.TabIndex = 5
+		self._textBox2.Text = "Shillings "
 		self._textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 		# 
 		# textBox3
@@ -82,6 +86,7 @@ class MainForm(Form):
 		self._textBox3.Name = "textBox3"
 		self._textBox3.Size = System.Drawing.Size(100, 20)
 		self._textBox3.TabIndex = 6
+		self._textBox3.Text = "Pence "
 		self._textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 		# 
 		# MainForm
@@ -102,7 +107,20 @@ class MainForm(Form):
 
 
 	def Button3Click(self, sender, e):
-		pound = textBox1.Text
-		shillings = (int(textBox2.Text)) 
-		pence = textBox3.Text
+		pound = float(self._textBox1.Text)
+		shillings = float(int((self._textBox2.Text) * 12) / 2.4)
+		pence = float(int(self._textBox3.Text) / 2.4)
+		mod = float(pound + shillings + pence)
 		
+		self._label1.Text = str(mod)
+		
+		
+
+	def Button2Click(self, sender, e):
+		self._textBox1.Text = "Pound"
+		self._textBox2.Text = "Shillings"
+		self._textBox3.Text = "Pence"
+		self._label1.Text = ""
+
+	def Button1Click(self, sender, e):
+		Application.Exit()
