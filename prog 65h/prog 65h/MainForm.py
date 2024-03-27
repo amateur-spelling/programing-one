@@ -107,9 +107,11 @@ class MainForm(Form):
 
 
 	def Button3Click(self, sender, e):
-		pound = float(self._textBox1.Text)
-		shillings = float(int((self._textBox2.Text) * 12) / 2.4)
-		pence = float(int(self._textBox3.Text) / 2.4)
+		pound = self._textBox1.Text
+		shillings = (float(self._textBox2.Text)
+		* 5 / 100)
+		pence = (float(self._textBox3.Text)
+		/ 2.4 / 100)
 		mod = float(pound + shillings + pence)
 		
 		self._label1.Text = str(mod)
