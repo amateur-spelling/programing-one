@@ -82,9 +82,7 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		heading = "Even Integer \t\t Sum"
-		self._listBox.Items.Add(heading)
+		heading = "Even Integer\t\t Sum"
+		self._listBox1.Items.Add(heading)
 		num2 = self._textBox1.Text
-		for integer in range(2,int(self._textBox1.Text)):
-			line = 
 		
