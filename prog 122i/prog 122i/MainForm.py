@@ -1,5 +1,6 @@
 ﻿import System.Drawing
 import System.Windows.Forms
+import math
 
 from System.Drawing import *
 from System.Windows.Forms import *
@@ -48,7 +49,7 @@ class MainForm(Form):
 		self._listBox1.Items.Add(heading)
 		num = 0
 		for num in range(-25, 25, 1):
-			Root = int(num)**float(1/3)
+			Root = float(num)**0.3
 			Cube = int(num)**3
 			line =  str(num) + "\t\t    " + str(Root) + "\t\t\t" + str(Cube)
 			self._listBox1.Items.Add(line)
