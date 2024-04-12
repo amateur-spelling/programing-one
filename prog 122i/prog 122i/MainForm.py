@@ -48,8 +48,12 @@ class MainForm(Form):
 		heading = "Number \t\t Cube Root \t\t Cube"
 		self._listBox1.Items.Add(heading)
 		num = 0
+		num1 = 0
 		for num in range(-25, 25, 1):
-			Root = float(num)**0.3
+			if num < 0:
+				num1 = (num * -1)**0.3
+			else:
+				num1 = num**0.3
 			Cube = int(num)**3
-			line =  str(num) + "\t\t    " + str(Root) + "\t\t\t" + str(Cube)
+			line =  str(num) + "\t\t    " + str(num1) + "\t\t\t" + str(Cube)
 			self._listBox1.Items.Add(line)
