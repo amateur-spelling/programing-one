@@ -43,6 +43,16 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		heading = " Number \t Square \t Square Root \t Cube \t Square Cube
-		self_listBox1.Items.Add(heading)
-		
+		heading = " Number \t Square \t Square Root \t Cube \t Square Cube"
+		self._listBox1.Items.Add(heading)
+		sq = 0
+		cube = 0
+		sqrot = 0
+		sqcube = 0
+		for num in range(1, 21, 1):
+			sq = num**2
+			sqrot = num**0.5
+			cube = num**3
+			sqcube = num**0.3
+			line = "  " + str(num) + "\t" + str(sq) + "\t" + str(sqrot) + "\t" + str(cube) + "\t" + str(sqcube)
+			self._listBox1.Items.Add(line)
