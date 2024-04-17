@@ -1,0 +1,3 @@
+C:\Users\lavelle.c\Documents\programing one\prog 122c\prog 122c\obj\Debug\prog 122c.pyprojResolveAssemblyReference.cache
+C:\Users\lavelle.c\Documents\programing one\prog 122c\prog 122c\obj\Debug\prog_122c.MainForm.resources
+C:\Users\lavelle.c\Documents\programing one\prog 122c\prog 122c\obj\Debug\prog 122c.pyproj.GenerateResource.Cache
