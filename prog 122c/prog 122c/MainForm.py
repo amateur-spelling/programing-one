@@ -48,16 +48,18 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		for num in range (2,12,2)
-			#line1 = str(num)
-		for num1 in range (3, 13, 2)
-			#line2 = str(num1
-		for num2 in range (4,24,4)
-			#line3 = str(num2)
-		Ad = 0
-		for num3 in range (4,x*3,100):
-			Ad += num3
-			#line4 = str(Ad)
-			line = str(num) + \t + str(num1) + \t + str(num2) + \t + str(Ad)
-			self._listBox.Items.Add(line)
+		for num1 in range (2,12,2):
+			line1 = " " + str(num1)
+			self._listBox1.Items.Add(line1)
+		
+		for num2 in range (3,13,2):
+			line2 = "\t" + str(num2)
+			self._listBox1.Items.Add(line2)
 			
+		for num3 in range (4,24,4):
+			line3 = "\t\t" + str(num3)
+			self._listBox1.Items.Add(line3)
+		
+		exnum = 0
+		for num4 in range (
+		

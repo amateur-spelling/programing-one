@@ -16,16 +16,19 @@ class MainForm(Form):
 		# 
 		# button1
 		# 
+		self._button1.BackColor = System.Drawing.Color.DarkCyan
+		self._button1.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._button1.Location = System.Drawing.Point(713, 143)
 		self._button1.Name = "button1"
 		self._button1.Size = System.Drawing.Size(156, 104)
 		self._button1.TabIndex = 0
 		self._button1.Text = "Caulate "
-		self._button1.UseVisualStyleBackColor = True
+		self._button1.UseVisualStyleBackColor = False
 		self._button1.Click += self.Button1Click
 		# 
 		# listBox1
 		# 
+		self._listBox1.BackColor = System.Drawing.Color.Aquamarine
 		self._listBox1.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._listBox1.FormattingEnabled = True
 		self._listBox1.ItemHeight = 25
@@ -36,6 +39,7 @@ class MainForm(Form):
 		# 
 		# MainForm
 		# 
+		self.BackColor = System.Drawing.Color.Cyan
 		self.ClientSize = System.Drawing.Size(933, 420)
 		self.Controls.Add(self._listBox1)
 		self.Controls.Add(self._button1)

@@ -50,8 +50,11 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		heading = " X \t\t Y"
+		heading = " X \t\t\t Y"
 		self._listBox1.Items.Add(heading)
 		Y = 0
-		for num in range(-12,17,1):
-			
+		x = 0
+		for x in range(-12,17,1):
+			Y = x**6 - 3 * x**5 - 93 * x**4 + 87 * x**3 + 1596 * x**2 - 1380 * x - 2800
+			line = " " + str(x) + "\t\t\t" + str(Y)
+			self._listBox1.Items.Add(line)
