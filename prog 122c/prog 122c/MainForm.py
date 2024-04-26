@@ -60,6 +60,5 @@ class MainForm(Form):
 			line3 = "\t\t" + str(num3)
 			self._listBox1.Items.Add(line3)
 		
-		exnum = 0
-		for num4 in range (
+		for num4 in range (12,,8)
 		
