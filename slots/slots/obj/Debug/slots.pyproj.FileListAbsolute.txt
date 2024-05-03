@@ -1,0 +1,12 @@
+C:\Users\lavelle.c\Documents\programing one\slots\slots\bin\Debug\slots.exe.config
+C:\Users\lavelle.c\Documents\programing one\slots\slots\bin\Debug\slots.exe
+C:\Users\lavelle.c\Documents\programing one\slots\slots\bin\Debug\slots.dll
+C:\Users\lavelle.c\Documents\programing one\slots\slots\bin\Debug\IronPython.dll
+C:\Users\lavelle.c\Documents\programing one\slots\slots\bin\Debug\IronPython.Modules.dll
+C:\Users\lavelle.c\Documents\programing one\slots\slots\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\lavelle.c\Documents\programing one\slots\slots\bin\Debug\Microsoft.Scripting.dll
+C:\Users\lavelle.c\Documents\programing one\slots\slots\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\lavelle.c\Documents\programing one\slots\slots\obj\Debug\slots.pyprojResolveAssemblyReference.cache
+C:\Users\lavelle.c\Documents\programing one\slots\slots\obj\Debug\slots.MainForm.resources
+C:\Users\lavelle.c\Documents\programing one\slots\slots\obj\Debug\slots.pyproj.GenerateResource.Cache
+C:\Users\lavelle.c\Documents\programing one\slots\slots\obj\Debug\slots.exe

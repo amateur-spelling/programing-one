@@ -1,0 +1,36 @@
+C:\Users\lavelle.c\Documents\programing one\test\test\bin\Debug\test.exe.config
+C:\Users\lavelle.c\Documents\programing one\test\test\bin\Debug\test.exe
+C:\Users\lavelle.c\Documents\programing one\test\test\bin\Debug\test.dll
+C:\Users\lavelle.c\Documents\programing one\test\test\bin\Debug\IronPython.dll
+C:\Users\lavelle.c\Documents\programing one\test\test\bin\Debug\IronPython.Modules.dll
+C:\Users\lavelle.c\Documents\programing one\test\test\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\lavelle.c\Documents\programing one\test\test\bin\Debug\Microsoft.Scripting.dll
+C:\Users\lavelle.c\Documents\programing one\test\test\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\lavelle.c\Documents\programing one\test\test\obj\Debug\test.pyprojResolveAssemblyReference.cache
+C:\Users\lavelle.c\Documents\programing one\test\test\obj\Debug\test.MainForm.resources
+C:\Users\lavelle.c\Documents\programing one\test\test\obj\Debug\test.pyproj.GenerateResource.Cache
+C:\Users\lavelle.c\Documents\programing one\test\test\obj\Debug\test.exe
+C:\Users\lavelle.c\Documents\programing-one\test\test\obj\Debug\test.pyprojResolveAssemblyReference.cache
+C:\Users\lavelle.c\Documents\programing-one\test\test\obj\Debug\test.MainForm.resources
+C:\Users\lavelle.c\Documents\programing-one\test\test\obj\Debug\test.pyproj.GenerateResource.Cache
+C:\Users\lavelle.c\Documents\programing-one\test\test\obj\Debug\test.exe
+C:\Users\lavelle.c\Documents\programing-one\test\test\bin\Debug\test.exe.config
+C:\Users\lavelle.c\Documents\programing-one\test\test\bin\Debug\test.exe
+C:\Users\lavelle.c\Documents\programing-one\test\test\bin\Debug\test.dll
+C:\Users\lavelle.c\Documents\programing-one\test\test\bin\Debug\IronPython.dll
+C:\Users\lavelle.c\Documents\programing-one\test\test\bin\Debug\IronPython.Modules.dll
+C:\Users\lavelle.c\Documents\programing-one\test\test\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\lavelle.c\Documents\programing-one\test\test\bin\Debug\Microsoft.Scripting.dll
+C:\Users\lavelle.c\Documents\programing-one\test\test\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\lavelle.c\Documents\GitHub\programing-one\test\test\bin\Debug\test.exe.config
+C:\Users\lavelle.c\Documents\GitHub\programing-one\test\test\bin\Debug\test.exe
+C:\Users\lavelle.c\Documents\GitHub\programing-one\test\test\bin\Debug\test.dll
+C:\Users\lavelle.c\Documents\GitHub\programing-one\test\test\bin\Debug\IronPython.dll
+C:\Users\lavelle.c\Documents\GitHub\programing-one\test\test\bin\Debug\IronPython.Modules.dll
+C:\Users\lavelle.c\Documents\GitHub\programing-one\test\test\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\lavelle.c\Documents\GitHub\programing-one\test\test\bin\Debug\Microsoft.Scripting.dll
+C:\Users\lavelle.c\Documents\GitHub\programing-one\test\test\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\lavelle.c\Documents\GitHub\programing-one\test\test\obj\Debug\test.pyprojResolveAssemblyReference.cache
+C:\Users\lavelle.c\Documents\GitHub\programing-one\test\test\obj\Debug\test.MainForm.resources
+C:\Users\lavelle.c\Documents\GitHub\programing-one\test\test\obj\Debug\test.pyproj.GenerateResource.Cache
+C:\Users\lavelle.c\Documents\GitHub\programing-one\test\test\obj\Debug\test.exe
