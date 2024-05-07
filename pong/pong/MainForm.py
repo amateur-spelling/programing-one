@@ -142,11 +142,11 @@ class MainForm(Form):
 			tmr.Enabled = False
 
 	def TimerballTick(self, sender, e):
-		ball = self._lblball
+		ball = self._lblBall
 		lpdl = self._lblleft
 		rpdl = self._lblright
-		rscore = int(self._rightscore.Text)
-		lscore = int(self._leftscore.Text)
+		rscore = int(self._right_score.Text)
+		lscore = int(self._left_score.Text)
 		ball.Top += self.ballup
 		ball.Left += 8 * self.balld
 		
@@ -160,7 +160,7 @@ class MainForm(Form):
 		if ball.Top <= 0:
 			self.balld = -1
 			ball.Top += 5 * self.balld
-		elif ball.Bottem <= 0:
+		elif ball.Bottom <= 0:
 			self.balld = 1
 			ball.Top += 5 * self.balld
 			self.ballup *= -1
@@ -169,12 +169,12 @@ class MainForm(Form):
 			rscore += 1
 			ball.Right = self.Width // 2
 			ball.Top = self.Height // 2
-			self._leftscore.Text = str(rscore)
-		if ball.Lcation.X >= slef.Width or (ball.Location.X > rpdl.Right + 20 and ball.Location.Y . rpdl.Top):
+			self._left_score.Text = str(rscore)
+		if ball.Location.X >= self.Width or (ball.Location.X > rpdl.Right + 20 and ball.Location.Y . rpdl.Top):
 			lscore += 1
 			ball.Left = self.Width // 2
 			ball.Top = self.Height // 2
-			self._leftscore.Text = str(lscore)
+			self._left_score.Text = str(lscore)
 			
 		if lscore == 10:
 			self._timerball.Enabled = False
@@ -204,15 +204,15 @@ class MainForm(Form):
 		self.pdlTick(self._lblright, self.flagright, self._timerright)
 	
 	def LblballClick(self, sender, e):
-		self._lblball.BackColor = Color.Red
+		self._lblBall.BackColor = Color.Red
 		self.BackColor = Color.Green 
 
 	def MainFormSizeChanged(self, sender, e):
 		self._lblright.Left = self.Width - 25 - self._lblright.Width
-		self._lblball.Left = self.Width // 2
-		self._lblball.Top = self.Height // 2
+		self._lblBall.Left = self.Width // 2
+		self._lblBall.Top = self.Height // 2
 		self._lbltitle.Width = self.Width - 25
-		self._rightscore.Left = self.Width - 75 - self._rightscore.Width
+		self._right_score.Left = self.Width - 75 - self._right_score.Width
 
 	def MainFormClick(self, sender, e):
 		pass
@@ -231,8 +231,8 @@ class MainForm(Form):
 		def reset():
 			title.Visible = True
 			title.Text = "Press Enter to start or M to start Multiplayer"
-			self._leftscore.Text = "0"
-			self._rightscore.Text = "0"
+			self._left_score.Text = "0"
+			self._right_score.Text = "0"
 			tball.Enabled = False
 			tdum.Enabled = False
 			tbool.Enabled = False
@@ -265,10 +265,10 @@ class MainForm(Form):
 		if tdum.Enabled:
 			if e.KeyCode == Keys.Up:
 				self.flagright = False
-				tright.Enable = True
+				tright.Enabled = True
 			elif e.KeyCode == Keys.Down:
-				self.flafleft = False
-				tright.Enable = True
+				self.flagright = True
+				tright.Enabled = True
 			elif tright.Enabled and self.flagright == False:
 				tright.Enabled = False
 		
