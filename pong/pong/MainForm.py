@@ -166,7 +166,7 @@ class MainForm(Form):
 		
 		if ball.Location.X <= 0 or (ball.Location.X < lpdl.Left - 20 and ball.Location.Y < lpdl.Top):
 			rscore += 1
-			ball.Right = self.Width // 2
+			ball.Left = self.Width // 2
 			ball.Top = self.Height // 2
 			self._right_score.Text = str(rscore)
 		
