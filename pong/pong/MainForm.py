@@ -153,24 +153,24 @@ class MainForm(Form):
 		if ball.Right >= rpdl.Left and ball.Bottom >= rpdl.Top and ball.Top <= rpdl.Bottom:
 			self.balld = -1
 			self.ballup = self.R.Next(-4,5)
-		elif ball.Left >= rpdl.Left and ball.Bottom >= rpdl.Top and ball.Top <= rpdl.Bottom:
-			self.balld = -1
+		elif ball.Left <= lpdl.Left and ball.Bottom >= lpdl.Top and ball.Top <= lpdl.Bottom:
+			self.balld = 1
 			self.ballup = self.R.Next(-4,5)
 			
 		if ball.Top <= 0:
 			self.balld = -1
 			ball.Top += 5 * self.balld
-		elif ball.Bottom <= 0:
+		elif ball.Bottom >= self.Height:
 			self.balld = 1
 			ball.Top += 5 * self.balld
-			self.ballup *= -1
 		
 		if ball.Location.X <= 0 or (ball.Location.X < lpdl.Left - 20 and ball.Location.Y < lpdl.Top):
 			rscore += 1
 			ball.Right = self.Width // 2
 			ball.Top = self.Height // 2
-			self._left_score.Text = str(rscore)
-		if ball.Location.X >= self.Width or (ball.Location.X > rpdl.Right + 20 and ball.Location.Y . rpdl.Top):
+			self._right_score.Text = str(rscore)
+		
+		if ball.Location.X >= self.Width or (ball.Location.X > rpdl.Right + 20 and ball.Location.Y > rpdl.Top):
 			lscore += 1
 			ball.Left = self.Width // 2
 			ball.Top = self.Height // 2
@@ -241,8 +241,8 @@ class MainForm(Form):
 			tright.Enabled = False
 			bl.Left = self.Width // 2
 			bl.Top = self.Height // 2
-			lblf.Top = (self.Height // 2) - 100 + lblf.Height
-			lblrt.Top = (self.Height // 2) - 100 + lbrt.Height
+			lblf.Top = (self.Height // 2) - 50 + lblf.Height
+			lblrt.Top = (self.Height // 2) - 50 + lbrt.Height
 			bl.BackColor = Color.White
 			
 		if e.KeyCode == Keys.R:
