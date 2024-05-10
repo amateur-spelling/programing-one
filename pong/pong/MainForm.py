@@ -159,10 +159,10 @@ class MainForm(Form):
 			
 		if ball.Top <= 0:
 			self.balld = -1
-			ball.Top += 5 * self.balld
-		elif ball.Bottom >= self.Height:
+			self.ballup = self.R.Next(-4,5)
+		elif ball.Bottom >= self.Height - 50:
 			self.balld = 1
-			ball.Top += 5 * self.balld
+			self.ballup = self.R.Next(-4,5)
 		
 		if ball.Location.X <= 0 or (ball.Location.X < lpdl.Left - 20 and ball.Location.Y < lpdl.Top):
 			rscore += 1
@@ -225,7 +225,8 @@ class MainForm(Form):
 		tleft = self._timerleft
 		tright = self._timerright
 		bl = self._lblBall
-		lbleft = self._lblright
+		lblf = self._lblleft
+		lblrt = self._lblright
 		title = self._lbltitle 
 		
 		def reset():
