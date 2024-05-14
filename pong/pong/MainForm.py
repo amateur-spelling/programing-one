@@ -204,7 +204,7 @@ class MainForm(Form):
 		self.pdlTick(self._lblright, self.flagright, self._timerright)
 	
 	def LblballClick(self, sender, e):
-		self._lblBall.BackColor = Color.Red
+		self._lblball.BackColor = Color.Red
 		self.BackColor = Color.Green 
 
 	def MainFormSizeChanged(self, sender, e):
@@ -243,7 +243,7 @@ class MainForm(Form):
 			bl.Left = self.Width // 2
 			bl.Top = self.Height // 2
 			lblf.Top = (self.Height // 2) - 50 + lblf.Height
-			lblrt.Top = (self.Height // 2) - 50 + lbrt.Height
+			lblrt.Top = (self.Height // 2) - 50 + lblrt.Height
 			bl.BackColor = Color.White
 			
 		if e.KeyCode == Keys.R:
@@ -275,7 +275,11 @@ class MainForm(Form):
 		
 		if tmult.Enabled and tball.Enabled:
 			if e.KeyCode == Keys.W:
-				pass
-			elif e.KeyCode == keys.S:
-				pass
+				self.flagleft = False
+				tleft.Enabled = True
+			elif e.KeyCode == Keys.S:
+				self.flagleft = True
+				tleft.Enabled = True
+			elif tleft.Enabled and self.flagleft == False:
+				tleft.Enabled = False
 			
