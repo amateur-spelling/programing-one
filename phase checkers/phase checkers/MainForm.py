@@ -8,6 +8,31 @@ class MainForm(Form):
 	def __init__(self):
 		self.InitializeComponent()
 		self.Next_Turn = False
+		self.b1  = False
+		self.b2  = False
+		self.b3  = False
+		self.b4  = False
+		self.b5  = False
+		self.b6  = False
+		self.b7  = False
+		self.b8  = False
+		self.b9  = False
+		self.b10 = False
+		self.b11 = False
+		self.b12 = False 
+		self.r13 = False
+		self.r14 = False
+		self.r15 = False
+		self.r16 = False
+		self.r17 = False
+		self.r18 = False
+		self.r19 = False
+		self.r20 = False
+		self.r21 = False
+		self.r22 = False
+		self.Mr = False
+		self.Ml = False
+		self.Mb = False
 		
 	
 	def InitializeComponent(self):
@@ -100,6 +125,7 @@ class MainForm(Form):
 		self._pictureBox22 = System.Windows.Forms.PictureBox()
 		self._pictureBox23 = System.Windows.Forms.PictureBox()
 		self._pictureBox24 = System.Windows.Forms.PictureBox()
+		self._label65 = System.Windows.Forms.Label()
 		self._pictureBox1.BeginInit()
 		self._pictureBox2.BeginInit()
 		self._pictureBox3.BeginInit()
@@ -739,6 +765,7 @@ class MainForm(Form):
 		self._pictureBox10.Size = System.Drawing.Size(53, 46)
 		self._pictureBox10.TabIndex = 76
 		self._pictureBox10.TabStop = False
+		self._pictureBox10.Click += self.PictureBox10Click
 		# 
 		# pictureBox11
 		# 
@@ -866,10 +893,21 @@ class MainForm(Form):
 		self._pictureBox24.TabIndex = 90
 		self._pictureBox24.TabStop = False
 		# 
+		# label65
+		# 
+		self._label65.BackColor = System.Drawing.Color.GreenYellow
+		self._label65.Location = System.Drawing.Point(565, 135)
+		self._label65.Name = "label65"
+		self._label65.Size = System.Drawing.Size(100, 23)
+		self._label65.TabIndex = 91
+		self._label65.Visible = False
+		self._label65.Click += self.Label65Click
+		# 
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.Goldenrod
 		self.ClientSize = System.Drawing.Size(677, 493)
+		self.Controls.Add(self._label65)
 		self.Controls.Add(self._pictureBox24)
 		self.Controls.Add(self._pictureBox23)
 		self.Controls.Add(self._pictureBox22)
@@ -993,12 +1031,23 @@ class MainForm(Form):
 
 
 
-# pictureboxs 1-12 are blue.
+# pictureboxs 1-12 are blue.13-24 is red
 	def MainFormLoad(self, sender, e):
 		pass
 
 	def MainFormKeyDown(self, sender, e):
-		pass
+		if e.KeyCode == Keys.Left:
+			self.Mr = False
+			self.Ml = True
+			self.Mb = False
+		if e.KeyCode == Keys.Right:
+			self.Mr = True
+			self.Ml = False
+			self.Mb = False
+		if e.KeyCode == Keys.Down:
+			self.Mr = False
+			self.Ml = False
+			self.Mb = True
 
 	def MainFormMouseDown(self, sender, e):
 		pass
@@ -1011,3 +1060,28 @@ class MainForm(Form):
 
 	def PictureBox7Click(self, sender, e):
 		pass
+
+	def PictureBox10Click(self, sender, e):
+		self.b1  = False
+		self.b2  = False
+		self.b3  = False
+		self.b4  = False
+		self.b5  = False
+		self.b6  = False
+		self.b7  = False
+		self.b8  = False
+		self.b9  = False
+		self.b10 = True
+		self.b11 = False
+		self.b12 = False
+		self.FormBorderStyle.FixedSingle
+		if self.b10 == True and self.Mr == True:
+			PictrueBox10.Top += -78
+			PictrueBox10.Left += 60
+					
+
+	def Label65Click(self, sender, e):
+		if self.Mr == True:
+			self.label65.Visable = True
+		else:
+			self.label65.Visable = True

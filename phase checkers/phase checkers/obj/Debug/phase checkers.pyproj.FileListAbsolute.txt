@@ -10,3 +10,15 @@ C:\Users\lavelle.c\Documents\Github\phase checkers\phase checkers\obj\Debug\phas
 C:\Users\lavelle.c\Documents\Github\phase checkers\phase checkers\obj\Debug\phase_checkers.MainForm.resources
 C:\Users\lavelle.c\Documents\Github\phase checkers\phase checkers\obj\Debug\phase checkers.pyproj.GenerateResource.Cache
 C:\Users\lavelle.c\Documents\Github\phase checkers\phase checkers\obj\Debug\phase checkers.exe
+C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\phase checkers\obj\Debug\phase checkers.pyprojResolveAssemblyReference.cache
+C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\phase checkers\obj\Debug\phase_checkers.MainForm.resources
+C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\phase checkers\obj\Debug\phase checkers.pyproj.GenerateResource.Cache
+C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\phase checkers\obj\Debug\phase checkers.exe
+C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\phase checkers\bin\Debug\phase checkers.exe.config
+C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\phase checkers\bin\Debug\phase checkers.exe
+C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\phase checkers\bin\Debug\phase checkers.dll
+C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\phase checkers\bin\Debug\IronPython.dll
+C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\phase checkers\bin\Debug\IronPython.Modules.dll
+C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\phase checkers\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\phase checkers\bin\Debug\Microsoft.Scripting.dll
+C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\phase checkers\bin\Debug\Microsoft.Scripting.Metadata.dll
