@@ -101,55 +101,31 @@ class MainForm(Form):
 		self._label63 = System.Windows.Forms.Label()
 		self._label64 = System.Windows.Forms.Label()
 		self._button1 = System.Windows.Forms.Button()
-		self._pictureBox1 = System.Windows.Forms.PictureBox()
-		self._pictureBox2 = System.Windows.Forms.PictureBox()
-		self._pictureBox3 = System.Windows.Forms.PictureBox()
-		self._pictureBox4 = System.Windows.Forms.PictureBox()
-		self._pictureBox5 = System.Windows.Forms.PictureBox()
-		self._pictureBox6 = System.Windows.Forms.PictureBox()
-		self._pictureBox7 = System.Windows.Forms.PictureBox()
-		self._pictureBox8 = System.Windows.Forms.PictureBox()
-		self._pictureBox9 = System.Windows.Forms.PictureBox()
-		self._pictureBox10 = System.Windows.Forms.PictureBox()
-		self._pictureBox11 = System.Windows.Forms.PictureBox()
-		self._pictureBox12 = System.Windows.Forms.PictureBox()
-		self._pictureBox13 = System.Windows.Forms.PictureBox()
-		self._pictureBox14 = System.Windows.Forms.PictureBox()
-		self._pictureBox15 = System.Windows.Forms.PictureBox()
-		self._pictureBox16 = System.Windows.Forms.PictureBox()
-		self._pictureBox17 = System.Windows.Forms.PictureBox()
-		self._pictureBox18 = System.Windows.Forms.PictureBox()
-		self._pictureBox19 = System.Windows.Forms.PictureBox()
-		self._pictureBox20 = System.Windows.Forms.PictureBox()
-		self._pictureBox21 = System.Windows.Forms.PictureBox()
-		self._pictureBox22 = System.Windows.Forms.PictureBox()
-		self._pictureBox23 = System.Windows.Forms.PictureBox()
-		self._pictureBox24 = System.Windows.Forms.PictureBox()
 		self._label65 = System.Windows.Forms.Label()
-		self._pictureBox1.BeginInit()
-		self._pictureBox2.BeginInit()
-		self._pictureBox3.BeginInit()
-		self._pictureBox4.BeginInit()
-		self._pictureBox5.BeginInit()
-		self._pictureBox6.BeginInit()
-		self._pictureBox7.BeginInit()
-		self._pictureBox8.BeginInit()
-		self._pictureBox9.BeginInit()
-		self._pictureBox10.BeginInit()
-		self._pictureBox11.BeginInit()
-		self._pictureBox12.BeginInit()
-		self._pictureBox13.BeginInit()
-		self._pictureBox14.BeginInit()
-		self._pictureBox15.BeginInit()
-		self._pictureBox16.BeginInit()
-		self._pictureBox17.BeginInit()
-		self._pictureBox18.BeginInit()
-		self._pictureBox19.BeginInit()
-		self._pictureBox20.BeginInit()
-		self._pictureBox21.BeginInit()
-		self._pictureBox22.BeginInit()
-		self._pictureBox23.BeginInit()
-		self._pictureBox24.BeginInit()
+		self._Bc1 = System.Windows.Forms.Button()
+		self._Bc8 = System.Windows.Forms.Button()
+		self._Bc12 = System.Windows.Forms.Button()
+		self._Bc7 = System.Windows.Forms.Button()
+		self._Bc11 = System.Windows.Forms.Button()
+		self._Bc3 = System.Windows.Forms.Button()
+		self._Bc6 = System.Windows.Forms.Button()
+		self._Bc5 = System.Windows.Forms.Button()
+		self._Bc2 = System.Windows.Forms.Button()
+		self._Bc9 = System.Windows.Forms.Button()
+		self._Bc10 = System.Windows.Forms.Button()
+		self._Bc4 = System.Windows.Forms.Button()
+		self._Rc1 = System.Windows.Forms.Button()
+		self._Rc5 = System.Windows.Forms.Button()
+		self._Rc9 = System.Windows.Forms.Button()
+		self._Rc6 = System.Windows.Forms.Button()
+		self._Rc10 = System.Windows.Forms.Button()
+		self._Rc7 = System.Windows.Forms.Button()
+		self._Rc11 = System.Windows.Forms.Button()
+		self._Rc12 = System.Windows.Forms.Button()
+		self._Rc8 = System.Windows.Forms.Button()
+		self._Rc4 = System.Windows.Forms.Button()
+		self._Rc3 = System.Windows.Forms.Button()
+		self._Rc2 = System.Windows.Forms.Button()
 		self.SuspendLayout()
 		# 
 		# label1
@@ -674,225 +650,6 @@ class MainForm(Form):
 		self._button1.Text = "Pass"
 		self._button1.UseVisualStyleBackColor = True
 		# 
-		# pictureBox1
-		# 
-		self._pictureBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-		self._pictureBox1.Location = System.Drawing.Point(48, 393)
-		self._pictureBox1.Name = "pictureBox1"
-		self._pictureBox1.Size = System.Drawing.Size(53, 46)
-		self._pictureBox1.TabIndex = 67
-		self._pictureBox1.TabStop = False
-		# 
-		# pictureBox2
-		# 
-		self._pictureBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-		self._pictureBox2.Location = System.Drawing.Point(176, 393)
-		self._pictureBox2.Name = "pictureBox2"
-		self._pictureBox2.Size = System.Drawing.Size(53, 46)
-		self._pictureBox2.TabIndex = 68
-		self._pictureBox2.TabStop = False
-		# 
-		# pictureBox3
-		# 
-		self._pictureBox3.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-		self._pictureBox3.Location = System.Drawing.Point(301, 393)
-		self._pictureBox3.Name = "pictureBox3"
-		self._pictureBox3.Size = System.Drawing.Size(53, 46)
-		self._pictureBox3.TabIndex = 69
-		self._pictureBox3.TabStop = False
-		# 
-		# pictureBox4
-		# 
-		self._pictureBox4.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-		self._pictureBox4.Location = System.Drawing.Point(422, 393)
-		self._pictureBox4.Name = "pictureBox4"
-		self._pictureBox4.Size = System.Drawing.Size(53, 46)
-		self._pictureBox4.TabIndex = 70
-		self._pictureBox4.TabStop = False
-		# 
-		# pictureBox5
-		# 
-		self._pictureBox5.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-		self._pictureBox5.Location = System.Drawing.Point(111, 342)
-		self._pictureBox5.Name = "pictureBox5"
-		self._pictureBox5.Size = System.Drawing.Size(53, 46)
-		self._pictureBox5.TabIndex = 71
-		self._pictureBox5.TabStop = False
-		# 
-		# pictureBox6
-		# 
-		self._pictureBox6.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-		self._pictureBox6.Location = System.Drawing.Point(236, 342)
-		self._pictureBox6.Name = "pictureBox6"
-		self._pictureBox6.Size = System.Drawing.Size(53, 46)
-		self._pictureBox6.TabIndex = 72
-		self._pictureBox6.TabStop = False
-		self._pictureBox6.Click += self.PictureBox6Click
-		# 
-		# pictureBox7
-		# 
-		self._pictureBox7.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-		self._pictureBox7.Location = System.Drawing.Point(364, 342)
-		self._pictureBox7.Name = "pictureBox7"
-		self._pictureBox7.Size = System.Drawing.Size(53, 46)
-		self._pictureBox7.TabIndex = 73
-		self._pictureBox7.TabStop = False
-		self._pictureBox7.Click += self.PictureBox7Click
-		# 
-		# pictureBox8
-		# 
-		self._pictureBox8.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-		self._pictureBox8.Location = System.Drawing.Point(488, 341)
-		self._pictureBox8.Name = "pictureBox8"
-		self._pictureBox8.Size = System.Drawing.Size(53, 46)
-		self._pictureBox8.TabIndex = 74
-		self._pictureBox8.TabStop = False
-		# 
-		# pictureBox9
-		# 
-		self._pictureBox9.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-		self._pictureBox9.Location = System.Drawing.Point(48, 290)
-		self._pictureBox9.Name = "pictureBox9"
-		self._pictureBox9.Size = System.Drawing.Size(53, 46)
-		self._pictureBox9.TabIndex = 75
-		self._pictureBox9.TabStop = False
-		# 
-		# pictureBox10
-		# 
-		self._pictureBox10.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-		self._pictureBox10.Location = System.Drawing.Point(176, 291)
-		self._pictureBox10.Name = "pictureBox10"
-		self._pictureBox10.Size = System.Drawing.Size(53, 46)
-		self._pictureBox10.TabIndex = 76
-		self._pictureBox10.TabStop = False
-		self._pictureBox10.Click += self.PictureBox10Click
-		# 
-		# pictureBox11
-		# 
-		self._pictureBox11.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-		self._pictureBox11.Location = System.Drawing.Point(301, 291)
-		self._pictureBox11.Name = "pictureBox11"
-		self._pictureBox11.Size = System.Drawing.Size(53, 46)
-		self._pictureBox11.TabIndex = 77
-		self._pictureBox11.TabStop = False
-		# 
-		# pictureBox12
-		# 
-		self._pictureBox12.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-		self._pictureBox12.Location = System.Drawing.Point(422, 291)
-		self._pictureBox12.Name = "pictureBox12"
-		self._pictureBox12.Size = System.Drawing.Size(53, 46)
-		self._pictureBox12.TabIndex = 78
-		self._pictureBox12.TabStop = False
-		# 
-		# pictureBox13
-		# 
-		self._pictureBox13.BackColor = System.Drawing.Color.Crimson
-		self._pictureBox13.Location = System.Drawing.Point(112, 35)
-		self._pictureBox13.Name = "pictureBox13"
-		self._pictureBox13.Size = System.Drawing.Size(53, 46)
-		self._pictureBox13.TabIndex = 79
-		self._pictureBox13.TabStop = False
-		# 
-		# pictureBox14
-		# 
-		self._pictureBox14.BackColor = System.Drawing.Color.Crimson
-		self._pictureBox14.Location = System.Drawing.Point(236, 138)
-		self._pictureBox14.Name = "pictureBox14"
-		self._pictureBox14.Size = System.Drawing.Size(53, 46)
-		self._pictureBox14.TabIndex = 80
-		self._pictureBox14.TabStop = False
-		# 
-		# pictureBox15
-		# 
-		self._pictureBox15.BackColor = System.Drawing.Color.Crimson
-		self._pictureBox15.Location = System.Drawing.Point(488, 138)
-		self._pictureBox15.Name = "pictureBox15"
-		self._pictureBox15.Size = System.Drawing.Size(53, 46)
-		self._pictureBox15.TabIndex = 81
-		self._pictureBox15.TabStop = False
-		# 
-		# pictureBox16
-		# 
-		self._pictureBox16.BackColor = System.Drawing.Color.Crimson
-		self._pictureBox16.Location = System.Drawing.Point(364, 138)
-		self._pictureBox16.Name = "pictureBox16"
-		self._pictureBox16.Size = System.Drawing.Size(53, 46)
-		self._pictureBox16.TabIndex = 82
-		self._pictureBox16.TabStop = False
-		# 
-		# pictureBox17
-		# 
-		self._pictureBox17.BackColor = System.Drawing.Color.Crimson
-		self._pictureBox17.Location = System.Drawing.Point(298, 87)
-		self._pictureBox17.Name = "pictureBox17"
-		self._pictureBox17.Size = System.Drawing.Size(53, 46)
-		self._pictureBox17.TabIndex = 83
-		self._pictureBox17.TabStop = False
-		# 
-		# pictureBox18
-		# 
-		self._pictureBox18.BackColor = System.Drawing.Color.Crimson
-		self._pictureBox18.Location = System.Drawing.Point(422, 86)
-		self._pictureBox18.Name = "pictureBox18"
-		self._pictureBox18.Size = System.Drawing.Size(53, 46)
-		self._pictureBox18.TabIndex = 84
-		self._pictureBox18.TabStop = False
-		# 
-		# pictureBox19
-		# 
-		self._pictureBox19.BackColor = System.Drawing.Color.Crimson
-		self._pictureBox19.Location = System.Drawing.Point(488, 35)
-		self._pictureBox19.Name = "pictureBox19"
-		self._pictureBox19.Size = System.Drawing.Size(53, 46)
-		self._pictureBox19.TabIndex = 85
-		self._pictureBox19.TabStop = False
-		# 
-		# pictureBox20
-		# 
-		self._pictureBox20.BackColor = System.Drawing.Color.Crimson
-		self._pictureBox20.Location = System.Drawing.Point(364, 35)
-		self._pictureBox20.Name = "pictureBox20"
-		self._pictureBox20.Size = System.Drawing.Size(53, 46)
-		self._pictureBox20.TabIndex = 86
-		self._pictureBox20.TabStop = False
-		# 
-		# pictureBox21
-		# 
-		self._pictureBox21.BackColor = System.Drawing.Color.Crimson
-		self._pictureBox21.Location = System.Drawing.Point(239, 35)
-		self._pictureBox21.Name = "pictureBox21"
-		self._pictureBox21.Size = System.Drawing.Size(53, 46)
-		self._pictureBox21.TabIndex = 87
-		self._pictureBox21.TabStop = False
-		# 
-		# pictureBox22
-		# 
-		self._pictureBox22.BackColor = System.Drawing.Color.Crimson
-		self._pictureBox22.Location = System.Drawing.Point(48, 86)
-		self._pictureBox22.Name = "pictureBox22"
-		self._pictureBox22.Size = System.Drawing.Size(53, 46)
-		self._pictureBox22.TabIndex = 88
-		self._pictureBox22.TabStop = False
-		# 
-		# pictureBox23
-		# 
-		self._pictureBox23.BackColor = System.Drawing.Color.Crimson
-		self._pictureBox23.Location = System.Drawing.Point(173, 87)
-		self._pictureBox23.Name = "pictureBox23"
-		self._pictureBox23.Size = System.Drawing.Size(53, 46)
-		self._pictureBox23.TabIndex = 89
-		self._pictureBox23.TabStop = False
-		# 
-		# pictureBox24
-		# 
-		self._pictureBox24.BackColor = System.Drawing.Color.Crimson
-		self._pictureBox24.Location = System.Drawing.Point(112, 137)
-		self._pictureBox24.Name = "pictureBox24"
-		self._pictureBox24.Size = System.Drawing.Size(53, 46)
-		self._pictureBox24.TabIndex = 90
-		self._pictureBox24.TabStop = False
-		# 
 		# label65
 		# 
 		self._label65.BackColor = System.Drawing.Color.GreenYellow
@@ -903,35 +660,254 @@ class MainForm(Form):
 		self._label65.Visible = False
 		self._label65.Click += self.Label65Click
 		# 
+		# Bc1
+		# 
+		self._Bc1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+		self._Bc1.Location = System.Drawing.Point(48, 291)
+		self._Bc1.Name = "Bc1"
+		self._Bc1.Size = System.Drawing.Size(53, 45)
+		self._Bc1.TabIndex = 92
+		self._Bc1.UseVisualStyleBackColor = False
+		# 
+		# Bc8
+		# 
+		self._Bc8.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+		self._Bc8.Location = System.Drawing.Point(488, 342)
+		self._Bc8.Name = "Bc8"
+		self._Bc8.Size = System.Drawing.Size(53, 45)
+		self._Bc8.TabIndex = 93
+		self._Bc8.UseVisualStyleBackColor = False
+		# 
+		# Bc12
+		# 
+		self._Bc12.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+		self._Bc12.Location = System.Drawing.Point(426, 393)
+		self._Bc12.Name = "Bc12"
+		self._Bc12.Size = System.Drawing.Size(53, 45)
+		self._Bc12.TabIndex = 94
+		self._Bc12.UseVisualStyleBackColor = False
+		# 
+		# Bc7
+		# 
+		self._Bc7.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+		self._Bc7.Location = System.Drawing.Point(360, 342)
+		self._Bc7.Name = "Bc7"
+		self._Bc7.Size = System.Drawing.Size(53, 45)
+		self._Bc7.TabIndex = 95
+		self._Bc7.UseVisualStyleBackColor = False
+		# 
+		# Bc11
+		# 
+		self._Bc11.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+		self._Bc11.Location = System.Drawing.Point(301, 393)
+		self._Bc11.Name = "Bc11"
+		self._Bc11.Size = System.Drawing.Size(53, 45)
+		self._Bc11.TabIndex = 96
+		self._Bc11.UseVisualStyleBackColor = False
+		# 
+		# Bc3
+		# 
+		self._Bc3.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+		self._Bc3.Location = System.Drawing.Point(301, 291)
+		self._Bc3.Name = "Bc3"
+		self._Bc3.Size = System.Drawing.Size(53, 45)
+		self._Bc3.TabIndex = 97
+		self._Bc3.UseVisualStyleBackColor = False
+		self._Bc3.Click += self.Button6Click
+		# 
+		# Bc6
+		# 
+		self._Bc6.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+		self._Bc6.Location = System.Drawing.Point(236, 342)
+		self._Bc6.Name = "Bc6"
+		self._Bc6.Size = System.Drawing.Size(53, 45)
+		self._Bc6.TabIndex = 98
+		self._Bc6.UseVisualStyleBackColor = False
+		# 
+		# Bc5
+		# 
+		self._Bc5.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+		self._Bc5.Location = System.Drawing.Point(112, 342)
+		self._Bc5.Name = "Bc5"
+		self._Bc5.Size = System.Drawing.Size(53, 45)
+		self._Bc5.TabIndex = 99
+		self._Bc5.UseVisualStyleBackColor = False
+		# 
+		# Bc2
+		# 
+		self._Bc2.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+		self._Bc2.Location = System.Drawing.Point(176, 291)
+		self._Bc2.Name = "Bc2"
+		self._Bc2.Size = System.Drawing.Size(53, 45)
+		self._Bc2.TabIndex = 100
+		self._Bc2.UseVisualStyleBackColor = False
+		self._Bc2.Click += self.Bc2Click
+		# 
+		# Bc9
+		# 
+		self._Bc9.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+		self._Bc9.Location = System.Drawing.Point(48, 393)
+		self._Bc9.Name = "Bc9"
+		self._Bc9.Size = System.Drawing.Size(53, 45)
+		self._Bc9.TabIndex = 101
+		self._Bc9.UseVisualStyleBackColor = False
+		# 
+		# Bc10
+		# 
+		self._Bc10.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+		self._Bc10.Location = System.Drawing.Point(176, 393)
+		self._Bc10.Name = "Bc10"
+		self._Bc10.Size = System.Drawing.Size(53, 45)
+		self._Bc10.TabIndex = 102
+		self._Bc10.UseVisualStyleBackColor = False
+		# 
+		# Bc4
+		# 
+		self._Bc4.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+		self._Bc4.Location = System.Drawing.Point(422, 291)
+		self._Bc4.Name = "Bc4"
+		self._Bc4.Size = System.Drawing.Size(53, 45)
+		self._Bc4.TabIndex = 103
+		self._Bc4.UseVisualStyleBackColor = False
+		# 
+		# Rc1
+		# 
+		self._Rc1.BackColor = System.Drawing.Color.Crimson
+		self._Rc1.Location = System.Drawing.Point(111, 36)
+		self._Rc1.Name = "Rc1"
+		self._Rc1.Size = System.Drawing.Size(53, 45)
+		self._Rc1.TabIndex = 104
+		self._Rc1.UseVisualStyleBackColor = False
+		# 
+		# Rc5
+		# 
+		self._Rc5.BackColor = System.Drawing.Color.Crimson
+		self._Rc5.Location = System.Drawing.Point(48, 87)
+		self._Rc5.Name = "Rc5"
+		self._Rc5.Size = System.Drawing.Size(53, 45)
+		self._Rc5.TabIndex = 105
+		self._Rc5.UseVisualStyleBackColor = False
+		# 
+		# Rc9
+		# 
+		self._Rc9.BackColor = System.Drawing.Color.Crimson
+		self._Rc9.Location = System.Drawing.Point(112, 138)
+		self._Rc9.Name = "Rc9"
+		self._Rc9.Size = System.Drawing.Size(53, 45)
+		self._Rc9.TabIndex = 106
+		self._Rc9.UseVisualStyleBackColor = False
+		# 
+		# Rc6
+		# 
+		self._Rc6.BackColor = System.Drawing.Color.Crimson
+		self._Rc6.Location = System.Drawing.Point(176, 87)
+		self._Rc6.Name = "Rc6"
+		self._Rc6.Size = System.Drawing.Size(53, 45)
+		self._Rc6.TabIndex = 107
+		self._Rc6.UseVisualStyleBackColor = False
+		# 
+		# Rc10
+		# 
+		self._Rc10.BackColor = System.Drawing.Color.Crimson
+		self._Rc10.Location = System.Drawing.Point(236, 138)
+		self._Rc10.Name = "Rc10"
+		self._Rc10.Size = System.Drawing.Size(53, 45)
+		self._Rc10.TabIndex = 108
+		self._Rc10.UseVisualStyleBackColor = False
+		# 
+		# Rc7
+		# 
+		self._Rc7.BackColor = System.Drawing.Color.Crimson
+		self._Rc7.Location = System.Drawing.Point(301, 87)
+		self._Rc7.Name = "Rc7"
+		self._Rc7.Size = System.Drawing.Size(53, 45)
+		self._Rc7.TabIndex = 109
+		self._Rc7.UseVisualStyleBackColor = False
+		# 
+		# Rc11
+		# 
+		self._Rc11.BackColor = System.Drawing.Color.Crimson
+		self._Rc11.Location = System.Drawing.Point(364, 138)
+		self._Rc11.Name = "Rc11"
+		self._Rc11.Size = System.Drawing.Size(53, 45)
+		self._Rc11.TabIndex = 110
+		self._Rc11.UseVisualStyleBackColor = False
+		# 
+		# Rc12
+		# 
+		self._Rc12.BackColor = System.Drawing.Color.Crimson
+		self._Rc12.Location = System.Drawing.Point(488, 138)
+		self._Rc12.Name = "Rc12"
+		self._Rc12.Size = System.Drawing.Size(53, 45)
+		self._Rc12.TabIndex = 111
+		self._Rc12.UseVisualStyleBackColor = False
+		self._Rc12.Click += self.Button9Click
+		# 
+		# Rc8
+		# 
+		self._Rc8.BackColor = System.Drawing.Color.Crimson
+		self._Rc8.Location = System.Drawing.Point(422, 87)
+		self._Rc8.Name = "Rc8"
+		self._Rc8.Size = System.Drawing.Size(53, 45)
+		self._Rc8.TabIndex = 112
+		self._Rc8.UseVisualStyleBackColor = False
+		# 
+		# Rc4
+		# 
+		self._Rc4.BackColor = System.Drawing.Color.Crimson
+		self._Rc4.Location = System.Drawing.Point(488, 36)
+		self._Rc4.Name = "Rc4"
+		self._Rc4.Size = System.Drawing.Size(53, 45)
+		self._Rc4.TabIndex = 113
+		self._Rc4.UseVisualStyleBackColor = False
+		# 
+		# Rc3
+		# 
+		self._Rc3.BackColor = System.Drawing.Color.Crimson
+		self._Rc3.Location = System.Drawing.Point(364, 36)
+		self._Rc3.Name = "Rc3"
+		self._Rc3.Size = System.Drawing.Size(53, 45)
+		self._Rc3.TabIndex = 114
+		self._Rc3.UseVisualStyleBackColor = False
+		# 
+		# Rc2
+		# 
+		self._Rc2.BackColor = System.Drawing.Color.Crimson
+		self._Rc2.Location = System.Drawing.Point(239, 36)
+		self._Rc2.Name = "Rc2"
+		self._Rc2.Size = System.Drawing.Size(53, 45)
+		self._Rc2.TabIndex = 115
+		self._Rc2.UseVisualStyleBackColor = False
+		# 
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.Goldenrod
 		self.ClientSize = System.Drawing.Size(677, 493)
+		self.Controls.Add(self._Rc2)
+		self.Controls.Add(self._Rc3)
+		self.Controls.Add(self._Rc4)
+		self.Controls.Add(self._Rc8)
+		self.Controls.Add(self._Rc12)
+		self.Controls.Add(self._Rc11)
+		self.Controls.Add(self._Rc7)
+		self.Controls.Add(self._Rc10)
+		self.Controls.Add(self._Rc6)
+		self.Controls.Add(self._Rc9)
+		self.Controls.Add(self._Rc5)
+		self.Controls.Add(self._Rc1)
+		self.Controls.Add(self._Bc4)
+		self.Controls.Add(self._Bc10)
+		self.Controls.Add(self._Bc9)
+		self.Controls.Add(self._Bc2)
+		self.Controls.Add(self._Bc5)
+		self.Controls.Add(self._Bc6)
+		self.Controls.Add(self._Bc3)
+		self.Controls.Add(self._Bc11)
+		self.Controls.Add(self._Bc7)
+		self.Controls.Add(self._Bc12)
+		self.Controls.Add(self._Bc8)
+		self.Controls.Add(self._Bc1)
 		self.Controls.Add(self._label65)
-		self.Controls.Add(self._pictureBox24)
-		self.Controls.Add(self._pictureBox23)
-		self.Controls.Add(self._pictureBox22)
-		self.Controls.Add(self._pictureBox21)
-		self.Controls.Add(self._pictureBox20)
-		self.Controls.Add(self._pictureBox19)
-		self.Controls.Add(self._pictureBox18)
-		self.Controls.Add(self._pictureBox17)
-		self.Controls.Add(self._pictureBox16)
-		self.Controls.Add(self._pictureBox15)
-		self.Controls.Add(self._pictureBox14)
-		self.Controls.Add(self._pictureBox13)
-		self.Controls.Add(self._pictureBox12)
-		self.Controls.Add(self._pictureBox11)
-		self.Controls.Add(self._pictureBox10)
-		self.Controls.Add(self._pictureBox9)
-		self.Controls.Add(self._pictureBox8)
-		self.Controls.Add(self._pictureBox7)
-		self.Controls.Add(self._pictureBox6)
-		self.Controls.Add(self._pictureBox5)
-		self.Controls.Add(self._pictureBox4)
-		self.Controls.Add(self._pictureBox3)
-		self.Controls.Add(self._pictureBox2)
-		self.Controls.Add(self._pictureBox1)
 		self.Controls.Add(self._button1)
 		self.Controls.Add(self._label57)
 		self.Controls.Add(self._label58)
@@ -1003,30 +979,6 @@ class MainForm(Form):
 		self.DragDrop += self.MainFormDragDrop
 		self.KeyDown += self.MainFormKeyDown
 		self.MouseDown += self.MainFormMouseDown
-		self._pictureBox1.EndInit()
-		self._pictureBox2.EndInit()
-		self._pictureBox3.EndInit()
-		self._pictureBox4.EndInit()
-		self._pictureBox5.EndInit()
-		self._pictureBox6.EndInit()
-		self._pictureBox7.EndInit()
-		self._pictureBox8.EndInit()
-		self._pictureBox9.EndInit()
-		self._pictureBox10.EndInit()
-		self._pictureBox11.EndInit()
-		self._pictureBox12.EndInit()
-		self._pictureBox13.EndInit()
-		self._pictureBox14.EndInit()
-		self._pictureBox15.EndInit()
-		self._pictureBox16.EndInit()
-		self._pictureBox17.EndInit()
-		self._pictureBox18.EndInit()
-		self._pictureBox19.EndInit()
-		self._pictureBox20.EndInit()
-		self._pictureBox21.EndInit()
-		self._pictureBox22.EndInit()
-		self._pictureBox23.EndInit()
-		self._pictureBox24.EndInit()
 		self.ResumeLayout(False)
 
 
@@ -1048,6 +1000,57 @@ class MainForm(Form):
 			self.Mr = False
 			self.Ml = False
 			self.Mb = True
+		def reset():
+			Bc1.Top   = 291
+			Bc1.Left  = 48
+			Bc2.Top   = 291
+			Bc2.Left  = 176
+			Bc3.Top   =
+			Bc3.Left  =
+			Bc4.Top   =
+			Bc4.Left  =
+			Bc5.Top   =
+			Bc5.Left  =
+			Bc6.Top   =
+			Bc6.Left  =
+			Bc7.Top   =
+			Bc7.Left  =
+			Bc8.Top   =
+			Bc8.Left  =
+			Bc9.Top   =
+			Bc9.Left  =
+			Bc10.Top  =
+			Bc10.Left =
+			Bc11.Top  =
+			Bc11.Left =
+			Bc12.Top  =
+			Bc12.Left =
+			# Red Checkers start here			
+			 Rc1  =
+			 Rc1  = 
+			 Rc2  = 
+			 Rc2  = 
+			 Rc3  = 
+			 Rc3  = 
+			 Rc4  = 
+			 Rc4  = 
+			 Rc5  = 
+			 Rc5  = 
+			 Rc6  = 
+			 Rc6  =
+			 Rc7  = 
+			 Rc7  = 
+			 Rc8  = 
+			 Rc8  = 
+			 Rc9  = 
+			 Rc9  = 
+			 Rc10 = 
+			 Rc10 = 
+			 Rc11 = 
+			 Rc11 = 
+			 Rc12 = 
+			 Rc12 =
+			
 
 	def MainFormMouseDown(self, sender, e):
 		pass
@@ -1062,8 +1065,24 @@ class MainForm(Form):
 		pass
 
 	def PictureBox10Click(self, sender, e):
+		pass
+	
+	def Label65Click(self, sender, e):
+		pass
+			
+
+	def PictureBox1Click(self, sender, e):
+		pass
+
+	def Button6Click(self, sender, e):
+		pass
+
+	def Button9Click(self, sender, e):
+		pass
+
+	def Bc2Click(self, sender, e):
 		self.b1  = False
-		self.b2  = False
+		self.b2  = True
 		self.b3  = False
 		self.b4  = False
 		self.b5  = False
@@ -1071,17 +1090,10 @@ class MainForm(Form):
 		self.b7  = False
 		self.b8  = False
 		self.b9  = False
-		self.b10 = True
+		self.b10 = False
 		self.b11 = False
-		self.b12 = False
-		self.FormBorderStyle.FixedSingle
-		if self.b10 == True and self.Mr == True:
-			PictrueBox10.Top += -78
-			PictrueBox10.Left += 60
-					
-
-	def Label65Click(self, sender, e):
-		if self.Mr == True:
-			self.label65.Visable = True
-		else:
-			self.label65.Visable = True
+		self.b12 = False 
+		
+		if self.b2 == True and Mr == True:
+			Bc2.Top += -51
+			Bc2.Left += 64
