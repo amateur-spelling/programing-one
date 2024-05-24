@@ -1050,6 +1050,8 @@ class MainForm(Form):
 			Rc11.Left = 364
 			Rc12.Top  = 138
 			Rc12.Left = 488
+		if e.KeyCode == Keys.R:
+			reset()
 			
 
 	def MainFormMouseDown(self, sender, e):
@@ -1095,5 +1097,5 @@ class MainForm(Form):
 		self.b12 = False 
 		
 		if self.b2 == True and self.Mr == True:
-			Bc2.Top += -51
-			Bc2.Left += 64
+			self.Bc2.Top += -51
+			self.Bc2.Left += 64
