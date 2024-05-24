@@ -983,20 +983,20 @@ class MainForm(Form):
 
 
 
-# pictureboxs 1-12 are blue.13-24 is red
+# buttons 1-12 are blue.13-24 is red
 	def MainFormLoad(self, sender, e):
 		pass
 
 	def MainFormKeyDown(self, sender, e):
-		if e.KeyCode == Keys.Left:
+		if e.KeyCode == Keys.A:
 			self.Mr = False
 			self.Ml = True
 			self.Mb = False
-		if e.KeyCode == Keys.Right:
+		if e.KeyCode == Keys.D:
 			self.Mr = True
 			self.Ml = False
 			self.Mb = False
-		if e.KeyCode == Keys.Down:
+		if e.KeyCode == Keys.S:
 			self.Mr = False
 			self.Ml = False
 			self.Mb = True
@@ -1005,51 +1005,51 @@ class MainForm(Form):
 			Bc1.Left  = 48
 			Bc2.Top   = 291
 			Bc2.Left  = 176
-			Bc3.Top   =
-			Bc3.Left  =
-			Bc4.Top   =
-			Bc4.Left  =
-			Bc5.Top   =
-			Bc5.Left  =
-			Bc6.Top   =
-			Bc6.Left  =
-			Bc7.Top   =
-			Bc7.Left  =
-			Bc8.Top   =
-			Bc8.Left  =
-			Bc9.Top   =
-			Bc9.Left  =
-			Bc10.Top  =
-			Bc10.Left =
-			Bc11.Top  =
-			Bc11.Left =
-			Bc12.Top  =
-			Bc12.Left =
+			Bc3.Top   = 291
+			Bc3.Left  = 301
+			Bc4.Top   = 291
+			Bc4.Left  = 422
+			Bc5.Top   = 342
+			Bc5.Left  = 122
+			Bc6.Top   = 342
+			Bc6.Left  = 236
+			Bc7.Top   = 342
+			Bc7.Left  = 360
+			Bc8.Top   = 342
+			Bc8.Left  = 488
+			Bc9.Top   = 393
+			Bc9.Left  = 48
+			Bc10.Top  = 393
+			Bc10.Left = 176
+			Bc11.Top  = 393
+			Bc11.Left = 301
+			Bc12.Top  = 393
+			Bc12.Left = 426
 			# Red Checkers start here			
-			 Rc1  =
-			 Rc1  = 
-			 Rc2  = 
-			 Rc2  = 
-			 Rc3  = 
-			 Rc3  = 
-			 Rc4  = 
-			 Rc4  = 
-			 Rc5  = 
-			 Rc5  = 
-			 Rc6  = 
-			 Rc6  =
-			 Rc7  = 
-			 Rc7  = 
-			 Rc8  = 
-			 Rc8  = 
-			 Rc9  = 
-			 Rc9  = 
-			 Rc10 = 
-			 Rc10 = 
-			 Rc11 = 
-			 Rc11 = 
-			 Rc12 = 
-			 Rc12 =
+			Rc1.Top   = 36
+			Rc1.Left  = 111
+			Rc2.Top   = 36
+			Rc2.Left  = 239
+			Rc3.Top   = 36
+			Rc3.Left  = 364
+			Rc4.Top   = 36
+			Rc4.Left  = 488
+			Rc5.Top   = 87
+			Rc5.Left  = 48
+			Rc6.Top   = 87
+			Rc6.Left  = 176
+			Rc7.Top   = 87
+			Rc7.Left  = 301
+			Rc8.Top   = 87
+			Rc8.Left  = 422
+			Rc9.Top   = 138
+			Rc9.Left  = 112
+			Rc10.Top  = 138
+			Rc10.Left = 236
+			Rc11.Top  = 138
+			Rc11.Left = 364
+			Rc12.Top  = 138
+			Rc12.Left = 488
 			
 
 	def MainFormMouseDown(self, sender, e):
@@ -1094,6 +1094,6 @@ class MainForm(Form):
 		self.b11 = False
 		self.b12 = False 
 		
-		if self.b2 == True and Mr == True:
+		if self.b2 == True and self.Mr == True:
 			Bc2.Top += -51
 			Bc2.Left += 64
