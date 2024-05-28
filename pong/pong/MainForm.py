@@ -242,7 +242,7 @@ class MainForm(Form):
 			tright.Enabled = False
 			bl.Left = self.Width // 2
 			bl.Top = self.Height // 2
-			lblf.Top = (self.Height // 2) - 50 + lblf.Height
+			lblf.Top = (self.Height // 2) - 50 + lblf.Height 
 			lblrt.Top = (self.Height // 2) - 50 + lblrt.Height
 			bl.BackColor = Color.White
 			

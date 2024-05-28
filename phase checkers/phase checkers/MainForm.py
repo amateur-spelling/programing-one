@@ -36,6 +36,7 @@ class MainForm(Form):
 		
 	
 	def InitializeComponent(self):
+		self._components = System.ComponentModel.Container()
 		self._label1 = System.Windows.Forms.Label()
 		self._label2 = System.Windows.Forms.Label()
 		self._label3 = System.Windows.Forms.Label()
@@ -126,6 +127,8 @@ class MainForm(Form):
 		self._Rc4 = System.Windows.Forms.Button()
 		self._Rc3 = System.Windows.Forms.Button()
 		self._Rc2 = System.Windows.Forms.Button()
+		self._BTt = System.Windows.Forms.Timer(self._components)
+		self._RTt = System.Windows.Forms.Timer(self._components)
 		self.SuspendLayout()
 		# 
 		# label1
@@ -879,6 +882,11 @@ class MainForm(Form):
 		self._Rc2.TabIndex = 115
 		self._Rc2.UseVisualStyleBackColor = False
 		# 
+		# BTt
+		# 
+		self._BTt.Enabled = True
+		self._BTt.Tick += self.BTtTick
+		# 
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.Goldenrod
@@ -1072,7 +1080,6 @@ class MainForm(Form):
 	def Label65Click(self, sender, e):
 		pass
 			
-
 	def PictureBox1Click(self, sender, e):
 		pass
 
@@ -1096,6 +1103,12 @@ class MainForm(Form):
 		self.b11 = False
 		self.b12 = False 
 		
+		
+
+	def BTtTick(self, sender, e):
 		if self.b2 == True and self.Mr == True:
 			self.Bc2.Top += -51
 			self.Bc2.Left += 64
+			self.Mr = False
+			self.b2 = False
+	def  pieceMove_tick(self, b, 
