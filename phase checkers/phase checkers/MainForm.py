@@ -1106,9 +1106,11 @@ class MainForm(Form):
 		
 
 	def BTtTick(self, sender, e):
+		pass
+	
+	def pieceMove_tick(self, sender, e):
 		if self.b2 == True and self.Mr == True:
 			self.Bc2.Top += -51
 			self.Bc2.Left += 64
 			self.Mr = False
 			self.b2 = False
-	def  pieceMove_tick(self, b, 
