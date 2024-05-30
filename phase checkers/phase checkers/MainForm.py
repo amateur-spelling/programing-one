@@ -7,32 +7,35 @@ from System.Windows.Forms import *
 class MainForm(Form):
 	def __init__(self):
 		self.InitializeComponent()
-		self.Next_Turn = False
-		self.b1  = False
-		self.b2  = False
-		self.b3  = False
-		self.b4  = False
-		self.b5  = False
-		self.b6  = False
-		self.b7  = False
-		self.b8  = False
-		self.b9  = False
-		self.b10 = False
-		self.b11 = False
-		self.b12 = False 
-		self.r13 = False
-		self.r14 = False
-		self.r15 = False
-		self.r16 = False
-		self.r17 = False
-		self.r18 = False
-		self.r19 = False
-		self.r20 = False
-		self.r21 = False
-		self.r22 = False
-		self.Mr = False
-		self.Ml = False
-		self.Mb = False
+		Next_Turn = False
+		bch1  = False
+		bch2  = False
+		bch3  = False
+		bch4  = False
+		bch5  = False
+		bch6  = False
+		bch7  = False
+		bch8  = False
+		bch9  = False
+		bch10 = False
+		bch11 = False
+		bch12 = False 
+		rch13 = False
+		rch14 = False
+		rch15 = False
+		rch16 = False
+		rch17 = False
+		rch18 = False
+		rch19 = False
+		rch20 = False
+		rch21 = False
+		rch22 = False
+		Mcr = False
+		Mcl = False
+		Mcb = False
+		Wait = False
+		CheckU = 0
+		CheckL = 0
 		
 	
 	def InitializeComponent(self):
@@ -997,17 +1000,17 @@ class MainForm(Form):
 
 	def MainFormKeyDown(self, sender, e):
 		if e.KeyCode == Keys.A:
-			self.Mr = False
-			self.Ml = True
-			self.Mb = False
+			self.Mcr = False
+			self.Mcl = True
+			self.Mcb = False
 		if e.KeyCode == Keys.D:
-			self.Mr = True
-			self.Ml = False
-			self.Mb = False
+			self.Mcr = True
+			self.Mcl = False
+			self.Mcb = False
 		if e.KeyCode == Keys.S:
-			self.Mr = False
-			self.Ml = False
-			self.Mb = True
+			self.Mcr = False
+			self.Mcl = False
+			self.Mcb = True
 		def reset():
 			Bc1.Top   = 291
 			Bc1.Left  = 48
@@ -1090,27 +1093,29 @@ class MainForm(Form):
 		pass
 
 	def Bc2Click(self, sender, e):
-		self.b1  = False
-		self.b2  = True
-		self.b3  = False
-		self.b4  = False
-		self.b5  = False
-		self.b6  = False
-		self.b7  = False
-		self.b8  = False
-		self.b9  = False
-		self.b10 = False
-		self.b11 = False
-		self.b12 = False 
+		bch1  = False
+		bch2  = True
+		bch3  = False
+		bch4  = False
+		bch5  = False
+		bch6  = False
+		bch7  = False
+		bch8  = False
+		bch9  = False
+		bch10 = False
+		bch11 = False
+		bch12 = False 
 		
 		
 
 	def BTtTick(self, sender, e):
-		pass
+		if bch2 == True and Mcr == True:
+			CheckU = -51
+			CheckL = 64
+			self.Bc2.Top += CheckU
+			self.Bc2.Left += CheckL
+			self.Mcr = False
+			self.bch2 = False
 	
-	def pieceMove_tick(self, sender, e):
-		if self.b2 == True and self.Mr == True:
-			self.Bc2.Top += -51
-			self.Bc2.Left += 64
-			self.Mr = False
-			self.b2 = False
+	def pieceMove_tick(self, bch, rch, e):
+		pass
