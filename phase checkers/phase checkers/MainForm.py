@@ -131,6 +131,7 @@ class MainForm(Form):
 		self._RTt = System.Windows.Forms.Timer(self._components)
 		self._button2 = System.Windows.Forms.Button()
 		self._button3 = System.Windows.Forms.Button()
+		self._button4 = System.Windows.Forms.Button()
 		self.SuspendLayout()
 		# 
 		# label1
@@ -897,6 +898,7 @@ class MainForm(Form):
 		self._button2.TabIndex = 116
 		self._button2.Text = "Move Left"
 		self._button2.UseVisualStyleBackColor = True
+		self._button2.Click += self.Button2Click
 		# 
 		# button3
 		# 
@@ -906,11 +908,23 @@ class MainForm(Form):
 		self._button3.TabIndex = 118
 		self._button3.Text = "Move Right"
 		self._button3.UseVisualStyleBackColor = True
+		self._button3.Click += self.Button3Click
+		# 
+		# button4
+		# 
+		self._button4.Location = System.Drawing.Point(560, 305)
+		self._button4.Name = "button4"
+		self._button4.Size = System.Drawing.Size(105, 31)
+		self._button4.TabIndex = 119
+		self._button4.Text = "Reset"
+		self._button4.UseVisualStyleBackColor = True
+		self._button4.Click += self.Button4Click
 		# 
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.Goldenrod
 		self.ClientSize = System.Drawing.Size(677, 493)
+		self.Controls.Add(self._button4)
 		self.Controls.Add(self._button3)
 		self.Controls.Add(self._button2)
 		self.Controls.Add(self._Rc2)
@@ -1018,72 +1032,8 @@ class MainForm(Form):
 		pass
 
 	def MainFormKeyDown(self, sender, e):
-		if e.KeyCode == Keys.A:
-			self.Mcr = False
-			MessageBox.Show("open")
+		pass
 			
-		if e.KeyCode == Keys.D:
-			self.Mcr = True
-			
-			
-		if e.KeyCode == Keys.S:
-			self.Mcr = False
-			
-			
-		def reset():
-			Bc1.Top   = 291
-			Bc1.Left  = 48
-			Bc2.Top   = 291
-			Bc2.Left  = 176
-			Bc3.Top   = 291
-			Bc3.Left  = 301
-			Bc4.Top   = 291
-			Bc4.Left  = 422
-			Bc5.Top   = 342
-			Bc5.Left  = 122
-			Bc6.Top   = 342
-			Bc6.Left  = 236
-			Bc7.Top   = 342
-			Bc7.Left  = 360
-			Bc8.Top   = 342
-			Bc8.Left  = 488
-			Bc9.Top   = 393
-			Bc9.Left  = 48
-			Bc10.Top  = 393
-			Bc10.Left = 176
-			Bc11.Top  = 393
-			Bc11.Left = 301
-			Bc12.Top  = 393
-			Bc12.Left = 426
-			# Red Checkers start here			
-			Rc1.Top   = 36
-			Rc1.Left  = 111
-			Rc2.Top   = 36
-			Rc2.Left  = 239
-			Rc3.Top   = 36
-			Rc3.Left  = 364
-			Rc4.Top   = 36
-			Rc4.Left  = 488
-			Rc5.Top   = 87
-			Rc5.Left  = 48
-			Rc6.Top   = 87
-			Rc6.Left  = 176
-			Rc7.Top   = 87
-			Rc7.Left  = 301
-			Rc8.Top   = 87
-			Rc8.Left  = 422
-			Rc9.Top   = 138
-			Rc9.Left  = 112
-			Rc10.Top  = 138
-			Rc10.Left = 236
-			Rc11.Top  = 138
-			Rc11.Left = 364
-			Rc12.Top  = 138
-			Rc12.Left = 488
-		if e.KeyCode == Keys.R:
-			reset()
-			
-
 	def MainFormMouseDown(self, sender, e):
 		pass
 
@@ -1113,19 +1063,9 @@ class MainForm(Form):
 		pass
 
 	def Bc2Click(self, sender, e):
-#		self.bch1  = False
-#		self.bch2  = True
-#		self.bch3  = False
-#		self.bch4  = False
-#		self.bch5  = False
-#		self.bch6  = False
-#		self.bch7  = False
-#		self.bch8  = False
-#		self.bch9  = False
-#		self.bch10 = False
-#		self.bch11 = False
-#		self.bch12 = False 
 		self.pieceMove(self._Bc2)
+		
+			
 		
 		
 
@@ -1139,3 +1079,71 @@ class MainForm(Form):
 		if self.Mcr == False:
 			piece.Top += -51
 			piece.Left += -64
+	def pieceBoundB(self, piece):
+		if piece.Top < 33 and Mcr == True:
+			piece.Top += 51
+			piece.Left += -64
+		elif piece.Top < 33 and Mcr == False:
+			piece.Top += 51
+			piece.Left += 64
+		elif piece.Left < 43:
+			
+
+	def Button2Click(self, sender, e):
+		self.Mcr = False
+
+	def Button3Click(self, sender, e):
+		self.Mcr = True
+
+	def Button4Click(self, sender, e):
+		def reset():
+			self.Bc1.Top   = 291
+			self.Bc1.Left  = 48
+			self.Bc2.Top   = 291
+			self.Bc2.Left  = 176
+			self.Bc3.Top   = 291
+			self.Bc3.Left  = 301
+			self.Bc4.Top   = 291
+			self.Bc4.Left  = 422
+			self.Bc5.Top   = 342
+			self.Bc5.Left  = 122
+			self.Bc6.Top   = 342
+			self.Bc6.Left  = 236
+			self.Bc7.Top   = 342
+			self.Bc7.Left  = 360
+			self.Bc8.Top   = 342
+			self.Bc8.Left  = 488
+			self.Bc9.Top   = 393
+			self.Bc9.Left  = 48
+			self.Bc10.Top  = 393
+			self.Bc10.Left = 176
+			self.Bc11.Top  = 393
+			self.Bc11.Left = 301
+			self.Bc12.Top  = 393
+			self.Bc12.Left = 426
+			# Red Checkers start here			
+			self.Rc1.Top   = 36
+			self.Rc1.Left  = 111
+			self.Rc2.Top   = 36
+			self.Rc2.Left  = 239
+			self.Rc3.Top   = 36
+			self.Rc3.Left  = 364
+			self.Rc4.Top   = 36
+			self.Rc4.Left  = 488
+			self.Rc5.Top   = 87
+			self.Rc5.Left  = 48
+			self.Rc6.Top   = 87
+			self.Rc6.Left  = 176
+			self.Rc7.Top   = 87
+			self.Rc7.Left  = 301
+			self.Rc8.Top   = 87
+			self.Rc8.Left  = 422
+			self.Rc9.Top   = 138
+			self.Rc9.Left  = 112
+			self.Rc10.Top  = 138
+			self.Rc10.Left = 236
+			self.Rc11.Top  = 138
+			self.Rc11.Left = 364
+			self.Rc12.Top  = 138
+			self.Rc12.Left = 488
+		reset()
