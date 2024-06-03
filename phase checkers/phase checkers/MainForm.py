@@ -33,8 +33,6 @@ class MainForm(Form):
 		self.Mcr = False
 		self.Mcl = False
 		self.Mcb = False
-		self.CheckU = 0
-		self.CheckL = 0
 		
 	
 	def InitializeComponent(self):
@@ -131,6 +129,8 @@ class MainForm(Form):
 		self._Rc2 = System.Windows.Forms.Button()
 		self._BTt = System.Windows.Forms.Timer(self._components)
 		self._RTt = System.Windows.Forms.Timer(self._components)
+		self._button2 = System.Windows.Forms.Button()
+		self._button3 = System.Windows.Forms.Button()
 		self.SuspendLayout()
 		# 
 		# label1
@@ -889,10 +889,30 @@ class MainForm(Form):
 		self._BTt.Enabled = True
 		self._BTt.Tick += self.BTtTick
 		# 
+		# button2
+		# 
+		self._button2.Location = System.Drawing.Point(577, 186)
+		self._button2.Name = "button2"
+		self._button2.Size = System.Drawing.Size(67, 51)
+		self._button2.TabIndex = 116
+		self._button2.Text = "Move Left"
+		self._button2.UseVisualStyleBackColor = True
+		# 
+		# button3
+		# 
+		self._button3.Location = System.Drawing.Point(577, 243)
+		self._button3.Name = "button3"
+		self._button3.Size = System.Drawing.Size(67, 56)
+		self._button3.TabIndex = 118
+		self._button3.Text = "Move Right"
+		self._button3.UseVisualStyleBackColor = True
+		# 
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.Goldenrod
 		self.ClientSize = System.Drawing.Size(677, 493)
+		self.Controls.Add(self._button3)
+		self.Controls.Add(self._button2)
 		self.Controls.Add(self._Rc2)
 		self.Controls.Add(self._Rc3)
 		self.Controls.Add(self._Rc4)
@@ -1000,18 +1020,15 @@ class MainForm(Form):
 	def MainFormKeyDown(self, sender, e):
 		if e.KeyCode == Keys.A:
 			self.Mcr = False
-			self.Mcl = True
-			self.Mcb = False
+			MessageBox.Show("open")
 			
 		if e.KeyCode == Keys.D:
 			self.Mcr = True
-			self.Mcl = False
-			self.Mcb = False
+			
 			
 		if e.KeyCode == Keys.S:
 			self.Mcr = False
-			self.Mcl = False
-			self.Mcb = True
+			
 			
 		def reset():
 			Bc1.Top   = 291
