@@ -7,7 +7,8 @@ from System.Windows.Forms import *
 class MainForm(Form):
 	def __init__(self):
 		self.InitializeComponent()
-		Next_Turn = False
+		self.Bturn = True
+		self.Rturn = False
 		self.bch1  = False
 		self.bch2  = False
 		self.bch3  = False
@@ -655,6 +656,7 @@ class MainForm(Form):
 		self._button1.TabIndex = 66
 		self._button1.Text = "Pass"
 		self._button1.UseVisualStyleBackColor = True
+		self._button1.Click += self.Button1Click
 		# 
 		# label65
 		# 
@@ -674,6 +676,7 @@ class MainForm(Form):
 		self._Bc1.Size = System.Drawing.Size(53, 45)
 		self._Bc1.TabIndex = 92
 		self._Bc1.UseVisualStyleBackColor = False
+		self._Bc1.Click += self.Bc1Click
 		# 
 		# Bc8
 		# 
@@ -683,6 +686,7 @@ class MainForm(Form):
 		self._Bc8.Size = System.Drawing.Size(53, 45)
 		self._Bc8.TabIndex = 93
 		self._Bc8.UseVisualStyleBackColor = False
+		self._Bc8.Click += self.Bc8Click
 		# 
 		# Bc12
 		# 
@@ -692,6 +696,7 @@ class MainForm(Form):
 		self._Bc12.Size = System.Drawing.Size(53, 45)
 		self._Bc12.TabIndex = 94
 		self._Bc12.UseVisualStyleBackColor = False
+		self._Bc12.Click += self.Bc12Click
 		# 
 		# Bc7
 		# 
@@ -701,6 +706,7 @@ class MainForm(Form):
 		self._Bc7.Size = System.Drawing.Size(53, 45)
 		self._Bc7.TabIndex = 95
 		self._Bc7.UseVisualStyleBackColor = False
+		self._Bc7.Click += self.Bc7Click
 		# 
 		# Bc11
 		# 
@@ -710,6 +716,7 @@ class MainForm(Form):
 		self._Bc11.Size = System.Drawing.Size(53, 45)
 		self._Bc11.TabIndex = 96
 		self._Bc11.UseVisualStyleBackColor = False
+		self._Bc11.Click += self.Bc11Click
 		# 
 		# Bc3
 		# 
@@ -729,6 +736,7 @@ class MainForm(Form):
 		self._Bc6.Size = System.Drawing.Size(53, 45)
 		self._Bc6.TabIndex = 98
 		self._Bc6.UseVisualStyleBackColor = False
+		self._Bc6.Click += self.Bc6Click
 		# 
 		# Bc5
 		# 
@@ -738,6 +746,7 @@ class MainForm(Form):
 		self._Bc5.Size = System.Drawing.Size(53, 45)
 		self._Bc5.TabIndex = 99
 		self._Bc5.UseVisualStyleBackColor = False
+		self._Bc5.Click += self.Bc5Click
 		# 
 		# Bc2
 		# 
@@ -757,6 +766,7 @@ class MainForm(Form):
 		self._Bc9.Size = System.Drawing.Size(53, 45)
 		self._Bc9.TabIndex = 101
 		self._Bc9.UseVisualStyleBackColor = False
+		self._Bc9.Click += self.Bc9Click
 		# 
 		# Bc10
 		# 
@@ -766,6 +776,7 @@ class MainForm(Form):
 		self._Bc10.Size = System.Drawing.Size(53, 45)
 		self._Bc10.TabIndex = 102
 		self._Bc10.UseVisualStyleBackColor = False
+		self._Bc10.Click += self.Bc10Click
 		# 
 		# Bc4
 		# 
@@ -775,6 +786,7 @@ class MainForm(Form):
 		self._Bc4.Size = System.Drawing.Size(53, 45)
 		self._Bc4.TabIndex = 103
 		self._Bc4.UseVisualStyleBackColor = False
+		self._Bc4.Click += self.Bc4Click
 		# 
 		# Rc1
 		# 
@@ -784,6 +796,7 @@ class MainForm(Form):
 		self._Rc1.Size = System.Drawing.Size(53, 45)
 		self._Rc1.TabIndex = 104
 		self._Rc1.UseVisualStyleBackColor = False
+		self._Rc1.Click += self.Rc1Click
 		# 
 		# Rc5
 		# 
@@ -793,6 +806,7 @@ class MainForm(Form):
 		self._Rc5.Size = System.Drawing.Size(53, 45)
 		self._Rc5.TabIndex = 105
 		self._Rc5.UseVisualStyleBackColor = False
+		self._Rc5.Click += self.Rc5Click
 		# 
 		# Rc9
 		# 
@@ -802,6 +816,7 @@ class MainForm(Form):
 		self._Rc9.Size = System.Drawing.Size(53, 45)
 		self._Rc9.TabIndex = 106
 		self._Rc9.UseVisualStyleBackColor = False
+		self._Rc9.Click += self.Rc9Click
 		# 
 		# Rc6
 		# 
@@ -811,6 +826,7 @@ class MainForm(Form):
 		self._Rc6.Size = System.Drawing.Size(53, 45)
 		self._Rc6.TabIndex = 107
 		self._Rc6.UseVisualStyleBackColor = False
+		self._Rc6.Click += self.Rc6Click
 		# 
 		# Rc10
 		# 
@@ -820,6 +836,7 @@ class MainForm(Form):
 		self._Rc10.Size = System.Drawing.Size(53, 45)
 		self._Rc10.TabIndex = 108
 		self._Rc10.UseVisualStyleBackColor = False
+		self._Rc10.Click += self.Rc10Click
 		# 
 		# Rc7
 		# 
@@ -829,6 +846,7 @@ class MainForm(Form):
 		self._Rc7.Size = System.Drawing.Size(53, 45)
 		self._Rc7.TabIndex = 109
 		self._Rc7.UseVisualStyleBackColor = False
+		self._Rc7.Click += self.Rc7Click
 		# 
 		# Rc11
 		# 
@@ -838,6 +856,7 @@ class MainForm(Form):
 		self._Rc11.Size = System.Drawing.Size(53, 45)
 		self._Rc11.TabIndex = 110
 		self._Rc11.UseVisualStyleBackColor = False
+		self._Rc11.Click += self.Rc11Click
 		# 
 		# Rc12
 		# 
@@ -857,6 +876,7 @@ class MainForm(Form):
 		self._Rc8.Size = System.Drawing.Size(53, 45)
 		self._Rc8.TabIndex = 112
 		self._Rc8.UseVisualStyleBackColor = False
+		self._Rc8.Click += self.Rc8Click
 		# 
 		# Rc4
 		# 
@@ -866,6 +886,7 @@ class MainForm(Form):
 		self._Rc4.Size = System.Drawing.Size(53, 45)
 		self._Rc4.TabIndex = 113
 		self._Rc4.UseVisualStyleBackColor = False
+		self._Rc4.Click += self.Rc4Click
 		# 
 		# Rc3
 		# 
@@ -875,6 +896,7 @@ class MainForm(Form):
 		self._Rc3.Size = System.Drawing.Size(53, 45)
 		self._Rc3.TabIndex = 114
 		self._Rc3.UseVisualStyleBackColor = False
+		self._Rc3.Click += self.Rc3Click
 		# 
 		# Rc2
 		# 
@@ -884,6 +906,7 @@ class MainForm(Form):
 		self._Rc2.Size = System.Drawing.Size(53, 45)
 		self._Rc2.TabIndex = 115
 		self._Rc2.UseVisualStyleBackColor = False
+		self._Rc2.Click += self.Rc2Click
 		# 
 		# BTt
 		# 
@@ -1057,14 +1080,14 @@ class MainForm(Form):
 		pass
 
 	def Button6Click(self, sender, e):
-		pass
+		self.pieceMoveB(self._Bc3)
 
 	def Button9Click(self, sender, e):
-		pass
+		self.pieceMoveR(self._Rc12)
 
 	def Bc2Click(self, sender, e):
-		self.pieceMove(self._Bc2)
-		
+		self.pieceMoveB(self._Bc2)
+		#if self.Top == self.rch13.Left and self.Left == self.rch13.Left:
 			
 		
 		
@@ -1072,22 +1095,25 @@ class MainForm(Form):
 	def BTtTick(self, sender, e):
 		pass
 	
-	def pieceMove(self, piece):
-		if self.Mcr == True:
+	def pieceMoveB(self, piece):
+		if self.Mcr == True and self.Bturn == True:
 			piece.Top += -51
 			piece.Left += 64
+			self.Bturn = False
+			self.Rturn = True
 		if self.Mcr == False:
 			piece.Top += -51
 			piece.Left += -64
-	def pieceBoundB(self, piece):
-		if piece.Top < 33 and Mcr == True:
+	def pieceMoveR(self, piece):
+		if self.Mcr == True:
 			piece.Top += 51
-			piece.Left += -64
-		elif piece.Top < 33 and Mcr == False:
+			piece.Left += 61
+		if self.Mcr == False:
 			piece.Top += 51
-			piece.Left += 64
-		elif piece.Left < 43:
-			
+			piece.Left += -61
+#	def pieceTakeB(self, taker, piece):
+#		if taker.Left and taker.Top
+#			pass
 
 	def Button2Click(self, sender, e):
 		self.Mcr = False
@@ -1147,3 +1173,72 @@ class MainForm(Form):
 			self.Rc12.Top  = 138
 			self.Rc12.Left = 488
 		reset()
+
+	def Rc9Click(self, sender, e):
+		self.pieceMoveR(self._Rc9)
+
+	def Rc10Click(self, sender, e):
+		self.pieceMoveR(self._Rc10)
+
+	def Rc11Click(self, sender, e):
+		self.pieceMoveR(self._Rc11)
+
+	def Rc11Click(self, sender, e):
+		self.pieceMoveR(self._Rc11)
+
+	def Rc5Click(self, sender, e):
+		self.pieceMoveR(self._Rc5)
+
+	def Rc6Click(self, sender, e):
+		self.pieceMoveR(self._Rc6)
+
+	def Rc1Click(self, sender, e):
+		self.pieceMoveR(self._Rc1)
+
+	def Rc2Click(self, sender, e):
+		self.pieceMoveR(self._Rc2)
+
+	def Rc3Click(self, sender, e):
+		self.pieceMoveR(self._Rc3)
+
+	def Rc4Click(self, sender, e):
+		self.pieceMoveR(self._Rc4)
+
+	def Rc7Click(self, sender, e):
+		self.pieceMoveR(self._Rc7)
+
+	def Rc8Click(self, sender, e):
+		self.pieceMoveR(self._Rc8)
+
+	def Bc1Click(self, sender, e):
+		self.pieceMoveB(self._Bc1)
+
+	def Bc4Click(self, sender, e):
+		self.pieceMoveB(self._Bc4)
+
+	def Bc5Click(self, sender, e):
+		self.pieceMoveB(self._Bc5)
+
+	def Bc6Click(self, sender, e):
+		self.pieceMoveB(self._Bc6)
+
+	def Bc7Click(self, sender, e):
+		self.pieceMoveB(self._Bc7)
+
+	def Bc8Click(self, sender, e):
+		self.pieceMoveB(self._Bc8)
+
+	def Bc9Click(self, sender, e):
+		self.pieceMoveB(self._Bc9)
+
+	def Bc10Click(self, sender, e):
+		self.pieceMoveB(self._Bc10)
+
+	def Bc11Click(self, sender, e):
+		self.pieceMoveB(self._Bc11)
+
+	def Bc12Click(self, sender, e):
+		self.pieceMoveB(self._Bc12)
+
+	def Button1Click(self, sender, e):
+		
