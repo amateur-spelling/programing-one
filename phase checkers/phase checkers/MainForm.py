@@ -102,7 +102,6 @@ class MainForm(Form):
 		self._label62 = System.Windows.Forms.Label()
 		self._label63 = System.Windows.Forms.Label()
 		self._label64 = System.Windows.Forms.Label()
-		self._button1 = System.Windows.Forms.Button()
 		self._label65 = System.Windows.Forms.Label()
 		self._Bc1 = System.Windows.Forms.Button()
 		self._Bc8 = System.Windows.Forms.Button()
@@ -647,17 +646,6 @@ class MainForm(Form):
 		self._label64.Size = System.Drawing.Size(63, 51)
 		self._label64.TabIndex = 58
 		# 
-		# button1
-		# 
-		self._button1.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._button1.Location = System.Drawing.Point(560, 22)
-		self._button1.Name = "button1"
-		self._button1.Size = System.Drawing.Size(84, 62)
-		self._button1.TabIndex = 66
-		self._button1.Text = "Pass"
-		self._button1.UseVisualStyleBackColor = True
-		self._button1.Click += self.Button1Click
-		# 
 		# label65
 		# 
 		self._label65.BackColor = System.Drawing.Color.GreenYellow
@@ -781,7 +769,7 @@ class MainForm(Form):
 		# Bc4
 		# 
 		self._Bc4.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-		self._Bc4.Location = System.Drawing.Point(422, 291)
+		self._Bc4.Location = System.Drawing.Point(577, 39)
 		self._Bc4.Name = "Bc4"
 		self._Bc4.Size = System.Drawing.Size(53, 45)
 		self._Bc4.TabIndex = 103
@@ -851,7 +839,7 @@ class MainForm(Form):
 		# Rc11
 		# 
 		self._Rc11.BackColor = System.Drawing.Color.Crimson
-		self._Rc11.Location = System.Drawing.Point(364, 138)
+		self._Rc11.Location = System.Drawing.Point(577, 374)
 		self._Rc11.Name = "Rc11"
 		self._Rc11.Size = System.Drawing.Size(53, 45)
 		self._Rc11.TabIndex = 110
@@ -975,7 +963,6 @@ class MainForm(Form):
 		self.Controls.Add(self._Bc8)
 		self.Controls.Add(self._Bc1)
 		self.Controls.Add(self._label65)
-		self.Controls.Add(self._button1)
 		self.Controls.Add(self._label57)
 		self.Controls.Add(self._label58)
 		self.Controls.Add(self._label59)
@@ -1087,6 +1074,7 @@ class MainForm(Form):
 
 	def Bc2Click(self, sender, e):
 		self.pieceMoveB(self._Bc2)
+		self.pieceTakeB(self._Bc2, self._Rc10)
 		#if self.Top == self.rch13.Left and self.Left == self.rch13.Left:
 			
 		
@@ -1104,17 +1092,30 @@ class MainForm(Form):
 		if self.Mcr == False:
 			piece.Top += -51
 			piece.Left += -64
+			self.Bturn = False
+			self.Rturn = True
 	def pieceMoveR(self, piece):
-		if self.Mcr == True:
+		if self.Mcr == True and self.Rturn == True:
 			piece.Top += 51
 			piece.Left += 61
-		if self.Mcr == False:
+			self.Bturn = True
+			self.Rturn = False
+		if self.Mcr == False and self.Rturn == True:
 			piece.Top += 51
 			piece.Left += -61
-#	def pieceTakeB(self, taker, piece):
-#		if taker.Left and taker.Top
-#			pass
-
+			self.Bturn = True
+			self.Rturn = False
+	def pieceTakeB(self, taker, piece):
+		if taker.Left <= piece.Left and taker.Right >= piece.Left and taker.Bottem >= piece.Bottem and taker.Top <= piece.Top:
+			piece.Top = 374
+			piece.Left = 577
+			pieceMove(taker)
+	def pieceTakeR(self, taker, piece):
+		if taker.Left <= piece.Left and taker.Right >= piece.Left and taker.Bottem >= piece.Bottem and taker.Top <= piece.Top:
+			piece.Left = 577
+			piece.Top = 39
+			pieceMove(taker)
+	
 	def Button2Click(self, sender, e):
 		self.Mcr = False
 
@@ -1241,4 +1242,4 @@ class MainForm(Form):
 		self.pieceMoveB(self._Bc12)
 
 	def Button1Click(self, sender, e):
-		
+		pass
