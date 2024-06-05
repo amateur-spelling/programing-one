@@ -31,9 +31,12 @@ class MainForm(Form):
 		self.rch20 = False
 		self.rch21 = False
 		self.rch22 = False
+		self.rch23 = False
+		self.rch24 = False
 		self.Mcr = False
 		self.Mcl = False
 		self.Mcb = False
+		self.McU = False
 		
 	
 	def InitializeComponent(self):
@@ -102,7 +105,6 @@ class MainForm(Form):
 		self._label62 = System.Windows.Forms.Label()
 		self._label63 = System.Windows.Forms.Label()
 		self._label64 = System.Windows.Forms.Label()
-		self._label65 = System.Windows.Forms.Label()
 		self._Bc1 = System.Windows.Forms.Button()
 		self._Bc8 = System.Windows.Forms.Button()
 		self._Bc12 = System.Windows.Forms.Button()
@@ -132,6 +134,8 @@ class MainForm(Form):
 		self._button2 = System.Windows.Forms.Button()
 		self._button3 = System.Windows.Forms.Button()
 		self._button4 = System.Windows.Forms.Button()
+		self._button1 = System.Windows.Forms.Button()
+		self._button5 = System.Windows.Forms.Button()
 		self.SuspendLayout()
 		# 
 		# label1
@@ -646,16 +650,6 @@ class MainForm(Form):
 		self._label64.Size = System.Drawing.Size(63, 51)
 		self._label64.TabIndex = 58
 		# 
-		# label65
-		# 
-		self._label65.BackColor = System.Drawing.Color.GreenYellow
-		self._label65.Location = System.Drawing.Point(565, 135)
-		self._label65.Name = "label65"
-		self._label65.Size = System.Drawing.Size(100, 23)
-		self._label65.TabIndex = 91
-		self._label65.Visible = False
-		self._label65.Click += self.Label65Click
-		# 
 		# Bc1
 		# 
 		self._Bc1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
@@ -901,9 +895,15 @@ class MainForm(Form):
 		self._BTt.Enabled = True
 		self._BTt.Tick += self.BTtTick
 		# 
+		# RTt
+		# 
+		self._RTt.Enabled = True
+		self._RTt.Interval = 1
+		self._RTt.Tick += self.RTtTick
+		# 
 		# button2
 		# 
-		self._button2.Location = System.Drawing.Point(577, 186)
+		self._button2.Location = System.Drawing.Point(577, 132)
 		self._button2.Name = "button2"
 		self._button2.Size = System.Drawing.Size(67, 51)
 		self._button2.TabIndex = 116
@@ -913,7 +913,7 @@ class MainForm(Form):
 		# 
 		# button3
 		# 
-		self._button3.Location = System.Drawing.Point(577, 243)
+		self._button3.Location = System.Drawing.Point(577, 266)
 		self._button3.Name = "button3"
 		self._button3.Size = System.Drawing.Size(67, 56)
 		self._button3.TabIndex = 118
@@ -923,7 +923,7 @@ class MainForm(Form):
 		# 
 		# button4
 		# 
-		self._button4.Location = System.Drawing.Point(560, 305)
+		self._button4.Location = System.Drawing.Point(560, 337)
 		self._button4.Name = "button4"
 		self._button4.Size = System.Drawing.Size(105, 31)
 		self._button4.TabIndex = 119
@@ -931,10 +931,31 @@ class MainForm(Form):
 		self._button4.UseVisualStyleBackColor = True
 		self._button4.Click += self.Button4Click
 		# 
+		# button1
+		# 
+		self._button1.Location = System.Drawing.Point(560, 199)
+		self._button1.Name = "button1"
+		self._button1.Size = System.Drawing.Size(105, 23)
+		self._button1.TabIndex = 120
+		self._button1.Text = "Move Up"
+		self._button1.UseVisualStyleBackColor = True
+		# 
+		# button5
+		# 
+		self._button5.Location = System.Drawing.Point(560, 237)
+		self._button5.Name = "button5"
+		self._button5.Size = System.Drawing.Size(105, 23)
+		self._button5.TabIndex = 121
+		self._button5.Text = "Move Down"
+		self._button5.UseVisualStyleBackColor = True
+		self._button5.Click += self.Button5Click
+		# 
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.Goldenrod
 		self.ClientSize = System.Drawing.Size(677, 493)
+		self.Controls.Add(self._button5)
+		self.Controls.Add(self._button1)
 		self.Controls.Add(self._button4)
 		self.Controls.Add(self._button3)
 		self.Controls.Add(self._button2)
@@ -962,7 +983,6 @@ class MainForm(Form):
 		self.Controls.Add(self._Bc12)
 		self.Controls.Add(self._Bc8)
 		self.Controls.Add(self._Bc1)
-		self.Controls.Add(self._label65)
 		self.Controls.Add(self._label57)
 		self.Controls.Add(self._label58)
 		self.Controls.Add(self._label59)
@@ -1067,40 +1087,63 @@ class MainForm(Form):
 		pass
 
 	def Button6Click(self, sender, e):
-		self.pieceMoveB(self._Bc3)
+		self.pieceMoveB(self._Bc3, self.bch3)
 
 	def Button9Click(self, sender, e):
-		self.pieceMoveR(self._Rc12)
+		self.pieceMoveR(self._Rc12, self.rch24)
 
 	def Bc2Click(self, sender, e):
-		self.pieceMoveB(self._Bc2)
+		self.pieceMoveB(self._Bc2, self.bch2)
 		self.pieceTakeB(self._Bc2, self._Rc10)
-		#if self.Top == self.rch13.Left and self.Left == self.rch13.Left:
+		
 			
 		
 		
 
 	def BTtTick(self, sender, e):
-		pass
+		if self._Bc2.Top <= 41:
+			self.bch2 = True
+		
+			
 	
-	def pieceMoveB(self, piece):
-		if self.Mcr == True and self.Bturn == True:
+	def pieceMoveB(self, piece, king):
+		if self.Mcr == True and self.Bturn == True and self.McU == True:
 			piece.Top += -51
 			piece.Left += 64
 			self.Bturn = False
 			self.Rturn = True
-		if self.Mcr == False:
+		if self.Mcr == False and self.Bturn == True and self.McU == True:
 			piece.Top += -51
 			piece.Left += -64
 			self.Bturn = False
 			self.Rturn = True
-	def pieceMoveR(self, piece):
-		if self.Mcr == True and self.Rturn == True:
+		if self.Mcr == True and self.Bturn == True and self.McU == False and king == True:
+			piece.Top += 51
+			piece.Left += 64
+			self.Bturn = False
+			self.Rturn = True
+		if self.Mcr == False and self.Bturn == True and self.McU == False and king == True:
+			piece.Top += 51
+			piece.Left += -64
+			self.Bturn = False
+			self.Rturn = True
+	def pieceMoveR(self, piece, king):
+		if self.Mcr == True and self.Rturn == True and self.McU == True:
 			piece.Top += 51
 			piece.Left += 61
 			self.Bturn = True
 			self.Rturn = False
-		if self.Mcr == False and self.Rturn == True:
+		if self.Mcr == False and self.Rturn == True and self.McU == True:
+			piece.Top += 51
+			piece.Left += -61
+			self.Bturn = True
+			self.Rturn = False
+		if self.Mcr == True and self.Rturn == True and self.McU == True and king == True:
+			piece.Top += 51
+			piece.Left += 61
+			self.Bturn = True
+			self.Rturn = False
+		if self.Mcr == False and self.Rturn == True and self.McU == True and king == True:
 			piece.Top += 51
 			piece.Left += -61
 			self.Bturn = True
@@ -1124,122 +1167,131 @@ class MainForm(Form):
 
 	def Button4Click(self, sender, e):
 		def reset():
-			self.Bc1.Top   = 291
-			self.Bc1.Left  = 48
-			self.Bc2.Top   = 291
-			self.Bc2.Left  = 176
-			self.Bc3.Top   = 291
-			self.Bc3.Left  = 301
-			self.Bc4.Top   = 291
-			self.Bc4.Left  = 422
-			self.Bc5.Top   = 342
-			self.Bc5.Left  = 122
-			self.Bc6.Top   = 342
-			self.Bc6.Left  = 236
-			self.Bc7.Top   = 342
-			self.Bc7.Left  = 360
-			self.Bc8.Top   = 342
-			self.Bc8.Left  = 488
-			self.Bc9.Top   = 393
-			self.Bc9.Left  = 48
-			self.Bc10.Top  = 393
-			self.Bc10.Left = 176
-			self.Bc11.Top  = 393
-			self.Bc11.Left = 301
-			self.Bc12.Top  = 393
-			self.Bc12.Left = 426
+			self._Bc1.Top   = 291
+			self._Bc1.Left  = 48
+			self._Bc2.Top   = 291
+			self._Bc2.Left  = 176
+			self._Bc3.Top   = 291
+			self._Bc3.Left  = 301
+			self._Bc4.Top   = 291
+			self._Bc4.Left  = 422
+			self._Bc5.Top   = 342
+			self._Bc5.Left  = 122
+			self._Bc6.Top   = 342
+			self._Bc6.Left  = 236
+			self._Bc7.Top   = 342
+			self._Bc7.Left  = 360
+			self._Bc8.Top   = 342
+			self._Bc8.Left  = 488
+			self._Bc9.Top   = 393
+			self._Bc9.Left  = 48
+			self._Bc10.Top  = 393
+			self._Bc10.Left = 176
+			self._Bc11.Top  = 393
+			self._Bc11.Left = 301
+			self._Bc12.Top  = 393
+			self._Bc12.Left = 426
 			# Red Checkers start here			
-			self.Rc1.Top   = 36
-			self.Rc1.Left  = 111
-			self.Rc2.Top   = 36
-			self.Rc2.Left  = 239
-			self.Rc3.Top   = 36
-			self.Rc3.Left  = 364
-			self.Rc4.Top   = 36
-			self.Rc4.Left  = 488
-			self.Rc5.Top   = 87
-			self.Rc5.Left  = 48
-			self.Rc6.Top   = 87
-			self.Rc6.Left  = 176
-			self.Rc7.Top   = 87
-			self.Rc7.Left  = 301
-			self.Rc8.Top   = 87
-			self.Rc8.Left  = 422
-			self.Rc9.Top   = 138
-			self.Rc9.Left  = 112
-			self.Rc10.Top  = 138
-			self.Rc10.Left = 236
-			self.Rc11.Top  = 138
-			self.Rc11.Left = 364
-			self.Rc12.Top  = 138
-			self.Rc12.Left = 488
+			self._Rc1.Top   = 36
+			self._Rc1.Left  = 111
+			self._Rc2.Top   = 36
+			self._Rc2.Left  = 239
+			self._Rc3.Top   = 36
+			self._Rc3.Left  = 364
+			self._Rc4.Top   = 36
+			self._Rc4.Left  = 488
+			self._Rc5.Top   = 87
+			self._Rc5.Left  = 48
+			self._Rc6.Top   = 87
+			self._Rc6.Left  = 176
+			self._Rc7.Top   = 87
+			self._Rc7.Left  = 301
+			self._Rc8.Top   = 87
+			self._Rc8.Left  = 422
+			self._Rc9.Top   = 138
+			self._Rc9.Left  = 112
+			self._Rc10.Top  = 138
+			self._Rc10.Left = 236
+			self._Rc11.Top  = 138
+			self._Rc11.Left = 364
+			self._Rc12.Top  = 138
+			self._Rc12.Left = 488
 		reset()
 
 	def Rc9Click(self, sender, e):
-		self.pieceMoveR(self._Rc9)
+		self.pieceMoveR(self._Rc9, self.rch21)
 
 	def Rc10Click(self, sender, e):
-		self.pieceMoveR(self._Rc10)
+		self.pieceMoveR(self._Rc10, self.rch22)
 
 	def Rc11Click(self, sender, e):
-		self.pieceMoveR(self._Rc11)
+		self.pieceMoveR(self._Rc11, self.rch23)
 
 	def Rc11Click(self, sender, e):
-		self.pieceMoveR(self._Rc11)
+		self.pieceMoveR(self._Rc11, self.rch23)
 
 	def Rc5Click(self, sender, e):
-		self.pieceMoveR(self._Rc5)
+		self.pieceMoveR(self._Rc5, self.rch17)
 
 	def Rc6Click(self, sender, e):
-		self.pieceMoveR(self._Rc6)
+		self.pieceMoveR(self._Rc6, self.rch18)
 
 	def Rc1Click(self, sender, e):
-		self.pieceMoveR(self._Rc1)
+		self.pieceMoveR(self._Rc1, self.rch13)
 
 	def Rc2Click(self, sender, e):
-		self.pieceMoveR(self._Rc2)
+		self.pieceMoveR(self._Rc2, self.rch14)
 
 	def Rc3Click(self, sender, e):
-		self.pieceMoveR(self._Rc3)
+		self.pieceMoveR(self._Rc3, self.rch15)
 
 	def Rc4Click(self, sender, e):
-		self.pieceMoveR(self._Rc4)
+		self.pieceMoveR(self._Rc4, self.rch16)
 
 	def Rc7Click(self, sender, e):
-		self.pieceMoveR(self._Rc7)
+		self.pieceMoveR(self._Rc7, self.rch19)
 
 	def Rc8Click(self, sender, e):
-		self.pieceMoveR(self._Rc8)
+		self.pieceMoveR(self._Rc8, self.rch20)
 
 	def Bc1Click(self, sender, e):
-		self.pieceMoveB(self._Bc1)
+		self.pieceMoveB(self._Bc1, self.bch1)
 
 	def Bc4Click(self, sender, e):
-		self.pieceMoveB(self._Bc4)
+		self.pieceMoveB(self._Bc4, self.bch4)
 
 	def Bc5Click(self, sender, e):
-		self.pieceMoveB(self._Bc5)
+		self.pieceMoveB(self._Bc5, self.bch5)
 
 	def Bc6Click(self, sender, e):
-		self.pieceMoveB(self._Bc6)
+		self.pieceMoveB(self._Bc6, self.bch6)
 
 	def Bc7Click(self, sender, e):
-		self.pieceMoveB(self._Bc7)
+		self.pieceMoveB(self._Bc7, self.bch7)
 
 	def Bc8Click(self, sender, e):
-		self.pieceMoveB(self._Bc8)
+		self.pieceMoveB(self._Bc8, self.bch8)
 
 	def Bc9Click(self, sender, e):
-		self.pieceMoveB(self._Bc9)
+		self.pieceMoveB(self._Bc9, self.bch9)
 
 	def Bc10Click(self, sender, e):
-		self.pieceMoveB(self._Bc10)
+		self.pieceMoveB(self._Bc10, self.bch10)
 
 	def Bc11Click(self, sender, e):
-		self.pieceMoveB(self._Bc11)
+		self.pieceMoveB(self._Bc11, self.bch11)
 
 	def Bc12Click(self, sender, e):
-		self.pieceMoveB(self._Bc12)
+		self.pieceMoveB(self._Bc12, self.bch12)
 
 	def Button1Click(self, sender, e):
-		pass
+		self.McU = True
+
+	def Button5Click(self, sender, e):
+		self.McU = False
+
+	def RTtTick(self, sender, e):
+		if self.McU == True:
+			MessageBox.Show("on")
+		if self.McU == False:
+			MessageBox.Show("off")
