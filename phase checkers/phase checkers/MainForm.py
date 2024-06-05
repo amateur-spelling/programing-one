@@ -36,7 +36,7 @@ class MainForm(Form):
 		self.Mcr = False
 		self.Mcl = False
 		self.Mcb = False
-		self.McU = False
+		self.McU = True
 		
 	
 	def InitializeComponent(self):
@@ -409,6 +409,7 @@ class MainForm(Form):
 		self._label34.Name = "label34"
 		self._label34.Size = System.Drawing.Size(63, 51)
 		self._label34.TabIndex = 40
+		self._label34.Click += self.Label34Click
 		# 
 		# label35
 		# 
@@ -898,7 +899,6 @@ class MainForm(Form):
 		# RTt
 		# 
 		self._RTt.Enabled = True
-		self._RTt.Interval = 1
 		self._RTt.Tick += self.RTtTick
 		# 
 		# button2
@@ -939,6 +939,7 @@ class MainForm(Form):
 		self._button1.TabIndex = 120
 		self._button1.Text = "Move Up"
 		self._button1.UseVisualStyleBackColor = True
+		self._button1.Click += self.Button1Click
 		# 
 		# button5
 		# 
@@ -1098,11 +1099,58 @@ class MainForm(Form):
 		
 			
 		
+	def RTtTick(self, sender, e):
+		if self._Rc1.Top >= 378:
+			self.rch13 = True
+		if self._Rc2.Top >= 378:
+			self.rch14 = True
+		if self._Rc3.Top >= 378:
+			self.rch15 = True
+		if self._Rc4.Top >= 378:
+			self.rch16 = True
+		if self._Rc5.Top >= 378:
+			self.rch17 = True
+		if self._Rc6.Top >= 378:
+			self.rch18 = True
+		if self._Rc7.Top >= 378:
+			self.rch19 = True
+		if self._Rc8.Top >= 378:
+			self.rch20 = True
+		if self._Rc9.Top >= 378:
+			self.rch21 = True
+		if self._Rc10.Top >= 378:
+			self.rch22 = True
+		if self._Rc11.Top >= 378:
+			self.rch23 = True
+		if self._Rc12.Top >= 378:
+			self.rch24 = True
 		
 
 	def BTtTick(self, sender, e):
+		if self._Bc1.Top <= 41:
+			self.bch1 = True
 		if self._Bc2.Top <= 41:
 			self.bch2 = True
+		if self._Bc3.Top <= 41:
+			self.bch3 = True
+		if self._Bc4.Top <= 41:
+			self.bch4 = True
+		if self._Bc5.Top <= 41:
+			self.bch5 = True
+		if self._Bc6.Top <= 41:
+			self.bch6 = True
+		if self._Bc7.Top <= 41:
+			self.bch7 = True
+		if self._Bc8.Top <= 41:
+			self.bch8 = True
+		if self._Bc9.Top <= 41:
+			self.bch9 = True
+		if self._Bc10.Top <= 41:
+			self.bch10 = True
+		if self._Bc11.Top <= 41:
+			self.bch11 = True
+		if self._Bc12.Top <= 41:
+			self.bch12 = True
 		
 			
 	
@@ -1286,12 +1334,15 @@ class MainForm(Form):
 
 	def Button1Click(self, sender, e):
 		self.McU = True
+#		if self.McU == True:
+#			MessageBox.Show("on")
 
 	def Button5Click(self, sender, e):
 		self.McU = False
+#		if self.McU == False:
+#			MessageBox.Show("off")
 
-	def RTtTick(self, sender, e):
-		if self.McU == True:
-			MessageBox.Show("on")
-		if self.McU == False:
-			MessageBox.Show("off")
+	
+
+	def Label34Click(self, sender, e):
+		pass
