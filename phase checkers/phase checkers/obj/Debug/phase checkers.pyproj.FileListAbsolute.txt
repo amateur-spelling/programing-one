@@ -22,3 +22,15 @@ C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\p
 C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\phase checkers\bin\Debug\Microsoft.Dynamic.dll
 C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\phase checkers\bin\Debug\Microsoft.Scripting.dll
 C:\Users\lavelle.c\Desktop\programing-one\GitHub\programing-one\phase checkers\phase checkers\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\marie\OneDrive\Desktop\python\programing-one\phase checkers\phase checkers\obj\Debug\phase checkers.pyprojResolveAssemblyReference.cache
+C:\Users\marie\OneDrive\Desktop\python\programing-one\phase checkers\phase checkers\obj\Debug\phase_checkers.MainForm.resources
+C:\Users\marie\OneDrive\Desktop\python\programing-one\phase checkers\phase checkers\obj\Debug\phase checkers.pyproj.GenerateResource.Cache
+C:\Users\marie\OneDrive\Desktop\python\programing-one\phase checkers\phase checkers\obj\Debug\phase checkers.exe
+C:\Users\marie\OneDrive\Desktop\python\programing-one\phase checkers\phase checkers\bin\Debug\phase checkers.exe.config
+C:\Users\marie\OneDrive\Desktop\python\programing-one\phase checkers\phase checkers\bin\Debug\phase checkers.exe
+C:\Users\marie\OneDrive\Desktop\python\programing-one\phase checkers\phase checkers\bin\Debug\phase checkers.dll
+C:\Users\marie\OneDrive\Desktop\python\programing-one\phase checkers\phase checkers\bin\Debug\IronPython.dll
+C:\Users\marie\OneDrive\Desktop\python\programing-one\phase checkers\phase checkers\bin\Debug\IronPython.Modules.dll
+C:\Users\marie\OneDrive\Desktop\python\programing-one\phase checkers\phase checkers\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\marie\OneDrive\Desktop\python\programing-one\phase checkers\phase checkers\bin\Debug\Microsoft.Scripting.dll
+C:\Users\marie\OneDrive\Desktop\python\programing-one\phase checkers\phase checkers\bin\Debug\Microsoft.Scripting.Metadata.dll
