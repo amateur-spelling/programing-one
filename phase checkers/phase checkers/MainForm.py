@@ -1089,15 +1089,50 @@ class MainForm(Form):
 
 	def Button6Click(self, sender, e):
 		self.pieceMoveB(self._Bc3, self.bch3)
+		
+		self.pieceTakeB(self._Bc3, self._Rc2)
+		self.pieceTakeB(self._Bc3, self._Rc3)
+		self.pieceTakeB(self._Bc3, self._Rc4)
+		self.pieceTakeB(self._Bc3, self._Rc5)	
+		self.pieceTakeB(self._Bc3, self._Rc6)
+		self.pieceTakeB(self._Bc3, self._Rc7)
+		self.pieceTakeB(self._Bc3, self._Rc8)
+		self.pieceTakeB(self._Bc3, self._Rc9)
+		self.pieceTakeB(self._Bc3, self._Rc10)
+		self.pieceTakeB(self._Bc3, self._Rc11)
+		self.pieceTakeB(self._Bc3, self._Rc12)
 
 	def Button9Click(self, sender, e):
 		self.pieceMoveR(self._Rc12, self.rch24)
+		
+		self.pieceTakeR(self._Rc12, self._Bc1)
+		self.pieceTakeR(self._Rc12, self._Bc2)
+		self.pieceTakeR(self._Rc12, self._Bc3)
+		self.pieceTakeR(self._Rc12, self._Bc4)
+		self.pieceTakeR(self._Rc12, self._Bc5)
+		self.pieceTakeR(self._Rc12, self._Bc6)
+		self.pieceTakeR(self._Rc12, self._Bc7)
+		self.pieceTakeR(self._Rc12, self._Bc8)
+		self.pieceTakeR(self._Rc12, self._Bc9)
+		self.pieceTakeR(self._Rc12, self._Bc10)
+		self.pieceTakeR(self._Rc12, self._Bc11)
+		self.pieceTakeR(self._Rc12, self._Bc12)
 
 	def Bc2Click(self, sender, e):
 		self.pieceMoveB(self._Bc2, self.bch2)
-		self.pieceTakeB(self._Bc2, self._Rc10)
 		
-			
+		self.pieceTakeB(self._Bc2, self._Rc1)
+		self.pieceTakeB(self._Bc2, self._Rc2)
+		self.pieceTakeB(self._Bc2, self._Rc3)
+		self.pieceTakeB(self._Bc2, self._Rc4)
+		self.pieceTakeB(self._Bc2, self._Rc5)	
+		self.pieceTakeB(self._Bc2, self._Rc6)
+		self.pieceTakeB(self._Bc2, self._Rc7)
+		self.pieceTakeB(self._Bc2, self._Rc8)
+		self.pieceTakeB(self._Bc2, self._Rc9)
+		self.pieceTakeB(self._Bc2, self._Rc10)
+		self.pieceTakeB(self._Bc2, self._Rc11)
+		self.pieceTakeB(self._Bc2, self._Rc12)
 		
 	def RTtTick(self, sender, e):
 		if self._Rc1.Top >= 378:
@@ -1186,26 +1221,25 @@ class MainForm(Form):
 			piece.Left += -61
 			self.Bturn = True
 			self.Rturn = False
-		if self.Mcr == True and self.Rturn == True and self.McU == True and king == True:
-			piece.Top += 51
+		if self.Mcr == True and self.Rturn == True and self.McU == False and king == True:
+			piece.Top += -51
 			piece.Left += 61
 			self.Bturn = True
 			self.Rturn = False
-		if self.Mcr == False and self.Rturn == True and self.McU == True and king == True:
-			piece.Top += 51
+		if self.Mcr == False and self.Rturn == True and self.McU == False and king == True:
+			piece.Top += -51
 			piece.Left += -61
 			self.Bturn = True
 			self.Rturn = False
 	def pieceTakeB(self, taker, piece):
-		if taker.Left <= piece.Left and taker.Right >= piece.Left and taker.Bottem >= piece.Bottem and taker.Top <= piece.Top:
+		if taker.Left >= piece.Left + 10 and taker.Top <= piece.Top - 10:
 			piece.Top = 374
 			piece.Left = 577
-			pieceMove(taker)
+			
 	def pieceTakeR(self, taker, piece):
-		if taker.Left <= piece.Left and taker.Right >= piece.Left and taker.Bottem >= piece.Bottem and taker.Top <= piece.Top:
+		if taker.Left >= piece.Left + 10 and taker.Top <= piece.Top - 10 and taker:
 			piece.Left = 577
 			piece.Top = 39
-			pieceMove(taker)
 	
 	def Button2Click(self, sender, e):
 		self.Mcr = False
@@ -1224,7 +1258,7 @@ class MainForm(Form):
 			self._Bc4.Top   = 291
 			self._Bc4.Left  = 422
 			self._Bc5.Top   = 342
-			self._Bc5.Left  = 122
+			self._Bc5.Left  = 112
 			self._Bc6.Top   = 342
 			self._Bc6.Left  = 236
 			self._Bc7.Top   = 342
@@ -1268,69 +1302,345 @@ class MainForm(Form):
 
 	def Rc9Click(self, sender, e):
 		self.pieceMoveR(self._Rc9, self.rch21)
+		
+		self.pieceTakeR(self._Rc9, self._Bc1)
+		self.pieceTakeR(self._Rc9, self._Bc2)
+		self.pieceTakeR(self._Rc9, self._Bc3)
+		self.pieceTakeR(self._Rc9, self._Bc4)
+		self.pieceTakeR(self._Rc9, self._Bc5)
+		self.pieceTakeR(self._Rc9, self._Bc6)
+		self.pieceTakeR(self._Rc9, self._Bc7)
+		self.pieceTakeR(self._Rc9, self._Bc8)
+		self.pieceTakeR(self._Rc9, self._Bc9)
+		self.pieceTakeR(self._Rc9, self._Bc10)
+		self.pieceTakeR(self._Rc9, self._Bc11)
+		self.pieceTakeR(self._Rc9, self._Bc12)
 
 	def Rc10Click(self, sender, e):
 		self.pieceMoveR(self._Rc10, self.rch22)
+		
+		self.pieceTakeR(self._Rc10, self._Bc1)
+		self.pieceTakeR(self._Rc10, self._Bc2)
+		self.pieceTakeR(self._Rc10, self._Bc3)
+		self.pieceTakeR(self._Rc10, self._Bc4)
+		self.pieceTakeR(self._Rc10, self._Bc5)
+		self.pieceTakeR(self._Rc10, self._Bc6)
+		self.pieceTakeR(self._Rc10, self._Bc7)
+		self.pieceTakeR(self._Rc10, self._Bc8)
+		self.pieceTakeR(self._Rc10, self._Bc9)
+		self.pieceTakeR(self._Rc10, self._Bc10)
+		self.pieceTakeR(self._Rc10, self._Bc11)
+		self.pieceTakeR(self._Rc10, self._Bc12)
 
 	def Rc11Click(self, sender, e):
 		self.pieceMoveR(self._Rc11, self.rch23)
+		
+		self.pieceTakeR(self._Rc11, self._Bc1)
+		self.pieceTakeR(self._Rc11, self._Bc2)
+		self.pieceTakeR(self._Rc11, self._Bc3)
+		self.pieceTakeR(self._Rc11, self._Bc4)
+		self.pieceTakeR(self._Rc11, self._Bc5)
+		self.pieceTakeR(self._Rc11, self._Bc6)
+		self.pieceTakeR(self._Rc11, self._Bc7)
+		self.pieceTakeR(self._Rc11, self._Bc8)
+		self.pieceTakeR(self._Rc11, self._Bc9)
+		self.pieceTakeR(self._Rc11, self._Bc10)
+		self.pieceTakeR(self._Rc11, self._Bc11)
+		self.pieceTakeR(self._Rc11, self._Bc12)
 
 	def Rc11Click(self, sender, e):
 		self.pieceMoveR(self._Rc11, self.rch23)
+		
+		self.pieceTakeR(self._Rc11, self._Bc1)
+		self.pieceTakeR(self._Rc11, self._Bc2)
+		self.pieceTakeR(self._Rc11, self._Bc3)
+		self.pieceTakeR(self._Rc11, self._Bc4)
+		self.pieceTakeR(self._Rc11, self._Bc5)
+		self.pieceTakeR(self._Rc11, self._Bc6)
+		self.pieceTakeR(self._Rc11, self._Bc7)
+		self.pieceTakeR(self._Rc11, self._Bc8)
+		self.pieceTakeR(self._Rc11, self._Bc9)
+		self.pieceTakeR(self._Rc11, self._Bc10)
+		self.pieceTakeR(self._Rc11, self._Bc11)
+		self.pieceTakeR(self._Rc11, self._Bc12)
 
 	def Rc5Click(self, sender, e):
 		self.pieceMoveR(self._Rc5, self.rch17)
+		
+		self.pieceTakeR(self._Rc5, self._Bc1)
+		self.pieceTakeR(self._Rc5, self._Bc2)
+		self.pieceTakeR(self._Rc5, self._Bc3)
+		self.pieceTakeR(self._Rc5, self._Bc4)
+		self.pieceTakeR(self._Rc5, self._Bc5)
+		self.pieceTakeR(self._Rc5, self._Bc6)
+		self.pieceTakeR(self._Rc5, self._Bc7)
+		self.pieceTakeR(self._Rc5, self._Bc8)
+		self.pieceTakeR(self._Rc5, self._Bc9)
+		self.pieceTakeR(self._Rc5, self._Bc10)
+		self.pieceTakeR(self._Rc5, self._Bc11)
+		self.pieceTakeR(self._Rc5, self._Bc12)
 
 	def Rc6Click(self, sender, e):
 		self.pieceMoveR(self._Rc6, self.rch18)
+		
+		self.pieceTakeR(self._Rc6, self._Bc1)
+		self.pieceTakeR(self._Rc6, self._Bc2)
+		self.pieceTakeR(self._Rc6, self._Bc3)
+		self.pieceTakeR(self._Rc6, self._Bc4)
+		self.pieceTakeR(self._Rc6, self._Bc5)
+		self.pieceTakeR(self._Rc6, self._Bc6)
+		self.pieceTakeR(self._Rc6, self._Bc7)
+		self.pieceTakeR(self._Rc6, self._Bc8)
+		self.pieceTakeR(self._Rc6, self._Bc9)
+		self.pieceTakeR(self._Rc6, self._Bc10)
+		self.pieceTakeR(self._Rc6, self._Bc11)
+		self.pieceTakeR(self._Rc6, self._Bc12)
 
 	def Rc1Click(self, sender, e):
 		self.pieceMoveR(self._Rc1, self.rch13)
+		
+		self.pieceTakeR(self._Rc1, self._Bc1)
+		self.pieceTakeR(self._Rc1, self._Bc2)
+		self.pieceTakeR(self._Rc1, self._Bc3)
+		self.pieceTakeR(self._Rc1, self._Bc4)
+		self.pieceTakeR(self._Rc1, self._Bc5)
+		self.pieceTakeR(self._Rc1, self._Bc6)
+		self.pieceTakeR(self._Rc1, self._Bc7)
+		self.pieceTakeR(self._Rc1, self._Bc8)
+		self.pieceTakeR(self._Rc1, self._Bc9)
+		self.pieceTakeR(self._Rc1, self._Bc10)
+		self.pieceTakeR(self._Rc1, self._Bc11)
+		self.pieceTakeR(self._Rc1, self._Bc12)
 
 	def Rc2Click(self, sender, e):
 		self.pieceMoveR(self._Rc2, self.rch14)
+		
+		self.pieceTakeR(self._Rc2, self._Bc1)
+		self.pieceTakeR(self._Rc2, self._Bc2)
+		self.pieceTakeR(self._Rc2, self._Bc3)
+		self.pieceTakeR(self._Rc2, self._Bc4)
+		self.pieceTakeR(self._Rc2, self._Bc5)
+		self.pieceTakeR(self._Rc2, self._Bc6)
+		self.pieceTakeR(self._Rc2, self._Bc7)
+		self.pieceTakeR(self._Rc2, self._Bc8)
+		self.pieceTakeR(self._Rc2, self._Bc9)
+		self.pieceTakeR(self._Rc2, self._Bc10)
+		self.pieceTakeR(self._Rc2, self._Bc11)
+		self.pieceTakeR(self._Rc2, self._Bc12)
 
 	def Rc3Click(self, sender, e):
 		self.pieceMoveR(self._Rc3, self.rch15)
+		
+		self.pieceTakeR(self._Rc3, self._Bc1)
+		self.pieceTakeR(self._Rc3, self._Bc2)
+		self.pieceTakeR(self._Rc3, self._Bc3)
+		self.pieceTakeR(self._Rc3, self._Bc4)
+		self.pieceTakeR(self._Rc3, self._Bc5)
+		self.pieceTakeR(self._Rc3, self._Bc6)
+		self.pieceTakeR(self._Rc3, self._Bc7)
+		self.pieceTakeR(self._Rc3, self._Bc8)
+		self.pieceTakeR(self._Rc3, self._Bc9)
+		self.pieceTakeR(self._Rc3, self._Bc10)
+		self.pieceTakeR(self._Rc3, self._Bc11)
+		self.pieceTakeR(self._Rc3, self._Bc12)
 
 	def Rc4Click(self, sender, e):
 		self.pieceMoveR(self._Rc4, self.rch16)
+		
+		self.pieceTakeR(self._Rc4, self._Bc1)
+		self.pieceTakeR(self._Rc4, self._Bc2)
+		self.pieceTakeR(self._Rc4, self._Bc3)
+		self.pieceTakeR(self._Rc4, self._Bc4)
+		self.pieceTakeR(self._Rc4, self._Bc5)
+		self.pieceTakeR(self._Rc4, self._Bc6)
+		self.pieceTakeR(self._Rc4, self._Bc7)
+		self.pieceTakeR(self._Rc4, self._Bc8)
+		self.pieceTakeR(self._Rc4, self._Bc9)
+		self.pieceTakeR(self._Rc4, self._Bc10)
+		self.pieceTakeR(self._Rc4, self._Bc11)
+		self.pieceTakeR(self._Rc4, self._Bc12)
 
 	def Rc7Click(self, sender, e):
 		self.pieceMoveR(self._Rc7, self.rch19)
+		
+		self.pieceTakeR(self._Rc7, self._Bc1)
+		self.pieceTakeR(self._Rc7, self._Bc2)
+		self.pieceTakeR(self._Rc7, self._Bc3)
+		self.pieceTakeR(self._Rc7, self._Bc4)
+		self.pieceTakeR(self._Rc7, self._Bc5)
+		self.pieceTakeR(self._Rc7, self._Bc6)
+		self.pieceTakeR(self._Rc7, self._Bc7)
+		self.pieceTakeR(self._Rc7, self._Bc8)
+		self.pieceTakeR(self._Rc7, self._Bc9)
+		self.pieceTakeR(self._Rc7, self._Bc10)
+		self.pieceTakeR(self._Rc7, self._Bc11)
+		self.pieceTakeR(self._Rc7, self._Bc12)
 
 	def Rc8Click(self, sender, e):
 		self.pieceMoveR(self._Rc8, self.rch20)
+		
+		self.pieceTakeR(self._Rc8, self._Bc1)
+		self.pieceTakeR(self._Rc8, self._Bc2)
+		self.pieceTakeR(self._Rc8, self._Bc3)
+		self.pieceTakeR(self._Rc8, self._Bc4)
+		self.pieceTakeR(self._Rc8, self._Bc5)
+		self.pieceTakeR(self._Rc8, self._Bc6)
+		self.pieceTakeR(self._Rc8, self._Bc7)
+		self.pieceTakeR(self._Rc8, self._Bc8)
+		self.pieceTakeR(self._Rc8, self._Bc9)
+		self.pieceTakeR(self._Rc8, self._Bc10)
+		self.pieceTakeR(self._Rc8, self._Bc11)
+		self.pieceTakeR(self._Rc8, self._Bc12)
 
 	def Bc1Click(self, sender, e):
 		self.pieceMoveB(self._Bc1, self.bch1)
+		
+		self.pieceTakeB(self._Bc1, self._Rc2)
+		self.pieceTakeB(self._Bc1, self._Rc3)
+		self.pieceTakeB(self._Bc1, self._Rc4)
+		self.pieceTakeB(self._Bc1, self._Rc5)	
+		self.pieceTakeB(self._Bc1, self._Rc6)
+		self.pieceTakeB(self._Bc1, self._Rc7)
+		self.pieceTakeB(self._Bc1, self._Rc8)
+		self.pieceTakeB(self._Bc1, self._Rc9)
+		self.pieceTakeB(self._Bc1, self._Rc10)
+		self.pieceTakeB(self._Bc1, self._Rc11)
+		self.pieceTakeB(self._Bc1, self._Rc12)
 
 	def Bc4Click(self, sender, e):
 		self.pieceMoveB(self._Bc4, self.bch4)
+		
+		self.pieceTakeB(self._Bc4, self._Rc2)
+		self.pieceTakeB(self._Bc4, self._Rc3)
+		self.pieceTakeB(self._Bc4, self._Rc4)
+		self.pieceTakeB(self._Bc4, self._Rc5)	
+		self.pieceTakeB(self._Bc4, self._Rc6)
+		self.pieceTakeB(self._Bc4, self._Rc7)
+		self.pieceTakeB(self._Bc4, self._Rc8)
+		self.pieceTakeB(self._Bc4, self._Rc9)
+		self.pieceTakeB(self._Bc4, self._Rc10)
+		self.pieceTakeB(self._Bc4, self._Rc11)
+		self.pieceTakeB(self._Bc4, self._Rc12)
 
 	def Bc5Click(self, sender, e):
 		self.pieceMoveB(self._Bc5, self.bch5)
+		
+		self.pieceTakeB(self._Bc5, self._Rc2)
+		self.pieceTakeB(self._Bc5, self._Rc3)
+		self.pieceTakeB(self._Bc5, self._Rc4)
+		self.pieceTakeB(self._Bc5, self._Rc5)	
+		self.pieceTakeB(self._Bc5, self._Rc6)
+		self.pieceTakeB(self._Bc5, self._Rc7)
+		self.pieceTakeB(self._Bc5, self._Rc8)
+		self.pieceTakeB(self._Bc5, self._Rc9)
+		self.pieceTakeB(self._Bc5, self._Rc10)
+		self.pieceTakeB(self._Bc5, self._Rc11)
+		self.pieceTakeB(self._Bc5, self._Rc12)
 
 	def Bc6Click(self, sender, e):
 		self.pieceMoveB(self._Bc6, self.bch6)
+		
+		self.pieceTakeB(self._Bc6, self._Rc2)
+		self.pieceTakeB(self._Bc6, self._Rc3)
+		self.pieceTakeB(self._Bc6, self._Rc4)
+		self.pieceTakeB(self._Bc6, self._Rc5)	
+		self.pieceTakeB(self._Bc6, self._Rc6)
+		self.pieceTakeB(self._Bc6, self._Rc7)
+		self.pieceTakeB(self._Bc6, self._Rc8)
+		self.pieceTakeB(self._Bc6, self._Rc9)
+		self.pieceTakeB(self._Bc6, self._Rc10)
+		self.pieceTakeB(self._Bc6, self._Rc11)
+		self.pieceTakeB(self._Bc6, self._Rc12)
 
 	def Bc7Click(self, sender, e):
 		self.pieceMoveB(self._Bc7, self.bch7)
+		
+		self.pieceTakeB(self._Bc7, self._Rc2)
+		self.pieceTakeB(self._Bc7, self._Rc3)
+		self.pieceTakeB(self._Bc7, self._Rc4)
+		self.pieceTakeB(self._Bc7, self._Rc5)	
+		self.pieceTakeB(self._Bc7, self._Rc6)
+		self.pieceTakeB(self._Bc7, self._Rc7)
+		self.pieceTakeB(self._Bc7, self._Rc8)
+		self.pieceTakeB(self._Bc7, self._Rc9)
+		self.pieceTakeB(self._Bc7, self._Rc10)
+		self.pieceTakeB(self._Bc7, self._Rc11)
+		self.pieceTakeB(self._Bc7, self._Rc12)
 
 	def Bc8Click(self, sender, e):
 		self.pieceMoveB(self._Bc8, self.bch8)
+		
+		self.pieceTakeB(self._Bc8, self._Rc2)
+		self.pieceTakeB(self._Bc8, self._Rc3)
+		self.pieceTakeB(self._Bc8, self._Rc4)
+		self.pieceTakeB(self._Bc8, self._Rc5)	
+		self.pieceTakeB(self._Bc8, self._Rc6)
+		self.pieceTakeB(self._Bc8, self._Rc7)
+		self.pieceTakeB(self._Bc8, self._Rc8)
+		self.pieceTakeB(self._Bc8, self._Rc9)
+		self.pieceTakeB(self._Bc8, self._Rc10)
+		self.pieceTakeB(self._Bc8, self._Rc11)
+		self.pieceTakeB(self._Bc8, self._Rc12)
 
 	def Bc9Click(self, sender, e):
 		self.pieceMoveB(self._Bc9, self.bch9)
+		
+		self.pieceTakeB(self._Bc9, self._Rc2)
+		self.pieceTakeB(self._Bc9, self._Rc3)
+		self.pieceTakeB(self._Bc9, self._Rc4)
+		self.pieceTakeB(self._Bc9, self._Rc5)	
+		self.pieceTakeB(self._Bc9, self._Rc6)
+		self.pieceTakeB(self._Bc9, self._Rc7)
+		self.pieceTakeB(self._Bc9, self._Rc8)
+		self.pieceTakeB(self._Bc9, self._Rc9)
+		self.pieceTakeB(self._Bc9, self._Rc10)
+		self.pieceTakeB(self._Bc9, self._Rc11)
+		self.pieceTakeB(self._Bc9, self._Rc12)
 
 	def Bc10Click(self, sender, e):
 		self.pieceMoveB(self._Bc10, self.bch10)
+		
+		self.pieceTakeB(self._Bc10, self._Rc2)
+		self.pieceTakeB(self._Bc10, self._Rc3)
+		self.pieceTakeB(self._Bc10, self._Rc4)
+		self.pieceTakeB(self._Bc10, self._Rc5)	
+		self.pieceTakeB(self._Bc10, self._Rc6)
+		self.pieceTakeB(self._Bc10, self._Rc7)
+		self.pieceTakeB(self._Bc10, self._Rc8)
+		self.pieceTakeB(self._Bc10, self._Rc9)
+		self.pieceTakeB(self._Bc10, self._Rc10)
+		self.pieceTakeB(self._Bc10, self._Rc11)
+		self.pieceTakeB(self._Bc10, self._Rc12)
 
 	def Bc11Click(self, sender, e):
 		self.pieceMoveB(self._Bc11, self.bch11)
+		
+		self.pieceTakeB(self._Bc11, self._Rc2)
+		self.pieceTakeB(self._Bc11, self._Rc3)
+		self.pieceTakeB(self._Bc11, self._Rc4)
+		self.pieceTakeB(self._Bc11, self._Rc5)	
+		self.pieceTakeB(self._Bc11, self._Rc6)
+		self.pieceTakeB(self._Bc11, self._Rc7)
+		self.pieceTakeB(self._Bc11, self._Rc8)
+		self.pieceTakeB(self._Bc11, self._Rc9)
+		self.pieceTakeB(self._Bc11, self._Rc10)
+		self.pieceTakeB(self._Bc11, self._Rc11)
+		self.pieceTakeB(self._Bc11, self._Rc12)
 
 	def Bc12Click(self, sender, e):
 		self.pieceMoveB(self._Bc12, self.bch12)
+		
+		self.pieceTakeB(self._Bc12, self._Rc2)
+		self.pieceTakeB(self._Bc12, self._Rc3)
+		self.pieceTakeB(self._Bc12, self._Rc4)
+		self.pieceTakeB(self._Bc12, self._Rc5)	
+		self.pieceTakeB(self._Bc12, self._Rc6)
+		self.pieceTakeB(self._Bc12, self._Rc7)
+		self.pieceTakeB(self._Bc12, self._Rc8)
+		self.pieceTakeB(self._Bc12, self._Rc9)
+		self.pieceTakeB(self._Bc12, self._Rc10)
+		self.pieceTakeB(self._Bc12, self._Rc11)
+		self.pieceTakeB(self._Bc12, self._Rc12)
 
 	def Button1Click(self, sender, e):
 		self.McU = True
