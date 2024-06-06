@@ -1210,6 +1210,7 @@ class MainForm(Form):
 			piece.Left += -64
 			self.Bturn = False
 			self.Rturn = True
+	
 	def pieceMoveR(self, piece, king):
 		if self.Mcr == True and self.Rturn == True and self.McU == True:
 			piece.Top += 51
@@ -1231,15 +1232,50 @@ class MainForm(Form):
 			piece.Left += -61
 			self.Bturn = True
 			self.Rturn = False
+	
 	def pieceTakeB(self, taker, piece):
-		if taker.Left >= piece.Left + 10 and taker.Top <= piece.Top - 10:
+		if taker.Left >= piece.Left - 10 and taker.Right <= piece.Right + 10 and taker.Top >= piece.Top - 10 and abs(taker.Top - piece.Top) <= 10 and self.Mcr == True and self.McU == True :
 			piece.Top = 374
 			piece.Left = 577
+			taker.Top += -51
+			taker.Left += 64
+		if taker.Left >= piece.Left - 10 and taker.Right <= piece.Right + 10 and taker.Top >= piece.Top - 10 and abs(taker.Top - piece.Top) <= 10 and self.Mcr == False and self.McU == True :
+			piece.Top = 374
+			piece.Left = 577
+			taker.Top += -51
+			taker.Left += -64
+		if taker.Left >= piece.Left - 10 and taker.Right <= piece.Right + 10 and taker.Top >= piece.Top - 10 and abs(taker.Top - piece.Top) <= 10 and self.Mcr == True and self.McU == False :
+			piece.Top = 374
+			piece.Left = 577
+			taker.Top += 51
+			taker.Left += 64
+		if taker.Left >= piece.Left - 10 and taker.Right <= piece.Right + 10 and taker.Top >= piece.Top - 10 and abs(taker.Top - piece.Top) <= 10 and self.Mcr == False and self.McU == False :
+			piece.Top = 374
+			piece.Left = 577
+			taker.Top += 51
+			taker.Left += -64
 			
 	def pieceTakeR(self, taker, piece):
-		if taker.Left >= piece.Left + 10 and taker.Top <= piece.Top - 10 and taker:
+		if taker.Left >= piece.Left - 10 and taker.Right <= piece.Right + 10 and taker.Top >= piece.Top - 10 and abs(taker.Top - piece.Top) <= 10 and self.Mcr == True and self.McU == True :
 			piece.Left = 577
 			piece.Top = 39
+			taker.Top += 51
+			taker.Left += 61
+		if taker.Left >= piece.Left - 10 and taker.Right <= piece.Right + 10 and taker.Top >= piece.Top - 10 and abs(taker.Top - piece.Top) <= 10 and self.Mcr == False and self.McU == True :
+			piece.Top = 374
+			piece.Left = 577
+			taker.Top += 51
+			taker.Left += -64
+		if taker.Left >= piece.Left - 10 and taker.Right <= piece.Right + 10 and taker.Top >= piece.Top - 10 and abs(taker.Top - piece.Top) <= 10 and self.Mcr == True and self.McU == False :
+			piece.Top = 374
+			piece.Left = 577
+			taker.Top += -51
+			taker.Left += 64
+		if taker.Left >= piece.Left - 10 and taker.Right <= piece.Right + 10 and taker.Top >= piece.Top - 10 and abs(taker.Top - piece.Top) <= 10 and self.Mcr == False and self.McU == False :
+			piece.Top = 374
+			piece.Left = 577
+			taker.Top += -51
+			taker.Left += -64
 	
 	def Button2Click(self, sender, e):
 		self.Mcr = False
